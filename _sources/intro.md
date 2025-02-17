@@ -1,6 +1,6 @@
-# Hallo gess
+# Komputasi Aljabar Linier
+## sistem linier
 
-ini aku aminn aku sudah haji, aku orang sampang tambelangan
 
 This is a small sample book to give you a feel for how book content is
 structured.
