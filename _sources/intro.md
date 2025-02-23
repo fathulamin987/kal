@@ -19,41 +19,23 @@ Sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang mel
 
  contoh sebuah sistem persamaan linier dengan dua variabel bisa berbentuk seperti ini:
 
-{
-2
-𝑥
-+
-3
-𝑦
-=
-8
-4
-𝑥
-−
-𝑦
-=
-2
-{ 
-2x+3y=8
-4x−y=2
+
+2𝑥+3𝑦=8
+
+4𝑥−𝑦=2
+
 ​
  
 Dalam contoh ini, kita memiliki dua persamaan linier yang melibatkan dua variabel, 
-𝑥
-x dan 
-𝑦
-y. Sistem ini mencari nilai-nilai 
-𝑥
-x dan 
-𝑦
-y yang memenuhi kedua persamaan sekaligus.
+𝑥 dan 𝑦 Sistem ini mencari nilai-nilai 𝑥 dan 𝑦 yang memenuhi kedua persamaan sekaligus.
 
 ##### penyelesaian tunggal
 Penyelesaian tunggal berarti ada satu nilai unik ( terdapat hanya satu solusi yang memenuhi semua persamaan dalam sistem tersebut ) 𝑥 dan 𝑦 yang membuat kedua persamaan ini benar pada saat bersamaan.
 
 Contoh :
-{ 
+
 2x+3y=8
+
 4x−y=2
 
 
@@ -67,8 +49,9 @@ gmb
  dalam sistem persamaan linier terjadi ketika sistem tersebut bertentangan, yang berarti tidak ada kombinasi nilai variabel yang dapat memenuhi semua persamaan dalam sistem tersebut secara bersamaan.
 
  Contoh :
- { 
+ 
 2x+3y=6
+
 4x+6y=15
 
 
@@ -81,7 +64,7 @@ Jika kita mencoba menyelesaikan sistem ini, kita akan melihat bahwa kedua persam
 disebut memiliki banyak penyelesaian dikarenakan semua persamaan dalam sistem tersebut menggambarkan hubungan yang sama, sehingga tidak ada batasan unik untuk nilai variabel. Dalam hal ini, solusi sistem tersebut bukan hanya satu titik, melainkan seluruh himpunan titik yang terletak pada satu garis atau lebih (tergantung pada jumlah variabel dalam sistem).
 
 Contoh : 
-{ 
+
 x+2y=4
 
 <iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
