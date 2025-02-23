@@ -7,6 +7,7 @@ sistem linier adalah sistem yang beroperasi dengan cara yang proporsional dan te
 Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara variabel yang memiliki pangkat tertinggi 1 (linear)
 ### Contoh persamaan linier dengan satu variabel adalah:
 
+
 2
 𝑥
 +
@@ -16,6 +17,7 @@ Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara 
 2x+3=7
 
 ### Contoh persamaan dengan dua variabel, seperti:
+
 
 3
 𝑥
