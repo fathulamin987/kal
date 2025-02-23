@@ -47,3 +47,24 @@ y. Sistem ini mencari nilai-nilai
 x dan 
 𝑦
 y yang memenuhi kedua persamaan sekaligus.
+
+##### penyelesaian tunggal
+Penyelesaian tunggal berarti ada satu nilai unik ( terdapat hanya satu solusi yang memenuhi semua persamaan dalam sistem tersebut ) 𝑥 dan 𝑦 yang membuat kedua persamaan ini benar pada saat bersamaan.
+
+Contoh :
+{ 
+2x+3y=8
+4x−y=2
+​
+ 
+
+##### Tidak memiliki penyelesaian
+ dalam sistem persamaan linier terjadi ketika sistem tersebut bertentangan, yang berarti tidak ada kombinasi nilai variabel yang dapat memenuhi semua persamaan dalam sistem tersebut secara bersamaan.
+
+ Contoh :
+ { 
+2x+3y=6
+4x+6y=15
+​
+ 
+Jika kita mencoba menyelesaikan sistem ini, kita akan melihat bahwa kedua persamaan ini saling bertentangan. Dalam hal ini, meskipun koefisien dari 𝑥 dan 𝑦 dalam kedua persamaan tampak berhubungan, konstanta di sisi kanan berbeda, yang berarti kedua garis akan berparalel dan tidak akan berpotongan.
