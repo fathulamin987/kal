@@ -8,10 +8,11 @@ Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara 
 
 ### Contoh persamaan linier dengan satu variabel adalah:
 
-2x+3=7
+2𝑥+ 3 = 7
 
 ### Contoh persamaan dengan dua variabel, seperti:
 
-3x+4y=12
+3𝑥 + 4𝑦 =12
 
-Di sini, x dan y adalah variabel, dan grafiknya akan membentuk garis lurus di bidang koordinat dua dimensi.
+Di sini, 𝑥 dan 𝑦 adalah variabel, dan grafiknya akan membentuk garis lurus di bidang koordinat dua dimensi.
+
