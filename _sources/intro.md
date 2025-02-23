@@ -4,10 +4,30 @@
 
 sistem linier adalah sistem yang beroperasi dengan cara yang proporsional dan terukur, di mana perubahan pada input menghasilkan perubahan yang sebanding pada output.
 
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara variabel yang memiliki pangkat tertinggi 1 (linear)
+### Contoh persamaan linier dengan satu variabel adalah:
 
-Check out the content pages bundled with this sample book to see more.
+2
+𝑥
++
+3
+=
+7
+2x+3=7
 
-```{tableofcontents}
-```
+### Contoh persamaan dengan dua variabel, seperti:
+
+3
+𝑥
++
+4
+𝑦
+=
+12
+3x+4y=12
+
+Di sini, 
+𝑥
+x dan 
+𝑦
+y adalah variabel, dan grafiknya akan membentuk garis lurus di bidang koordinat dua dimensi.
