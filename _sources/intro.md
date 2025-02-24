@@ -77,7 +77,7 @@ Contoh :
 Jika kita melihat persamaan kedua, kita dapat melihat bahwa persamaan kedua sebenarnya adalah kelipatan dua dari persamaan pertama. Oleh karena itu, kedua persamaan ini menggambarkan garis yang sama dalam sistem koordinat, yang berarti sistem ini memiliki tak terhingga banyak solusi (seluruh garis tersebut adalah solusi).
 
 # contoh soal eliminasi gaus 
-# contoh 3 :
+contoh 3 :
 
 Diberikan sistem persamaan:
 
@@ -143,7 +143,7 @@ $$
 
 di mana \(t\) adalah parameter bebas.
 
-## contoh nomer 4 :
+contoh nomer 4 :
 
 Diberikan sistem persamaan:
 
