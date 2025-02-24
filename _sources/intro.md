@@ -203,5 +203,30 @@ $$
 Maka kita dapatkan:
 
 $$
-x_
+x_1 + 2x_3 - 1 = 5 \implies x_1 = 6 - 2x_3
+$$
+
+Karena kita memiliki dua persamaan dengan tiga variabel, kita dapat menyatakan solusi dalam bentuk parameter. Misalkan \(x_3 = p\), maka:
+
+$$
+x_1 = 6 - 2p
+$$
+$$
+x_2 = 2p - 1
+$$
+$$
+x_3 = p
+$$
+
+Jadi, solusi umum dari sistem persamaan ini adalah:
+
+$$
+\begin{cases}
+x_1 = 6 - 2p \\
+x_2 = 2p - 1 \\
+x_3 = p
+\end{cases}
+$$
+
+di mana \(p\) adalah parameter bebas.
 
