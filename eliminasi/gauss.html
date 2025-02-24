@@ -361,8 +361,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">contoh soal eliminasi gaus</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -373,10 +378,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="contoh-soal-eliminasi-gaus">
+  <section class="tex2jax_ignore mathjax_ignore" id="contoh-soal-eliminasi-gaus">
 <h1>contoh soal eliminasi gaus<a class="headerlink" href="#contoh-soal-eliminasi-gaus" title="Link to this heading">#</a></h1>
-<section id="contoh-3">
-<h2>contoh 3 :<a class="headerlink" href="#contoh-3" title="Link to this heading">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contoh-3">
+<h1>contoh 3 :<a class="headerlink" href="#contoh-3" title="Link to this heading">#</a></h1>
 <p>Diberikan sistem persamaan:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -433,6 +439,59 @@ x_2 = t
 \end{cases}
 \end{split}\]</div>
 <p>di mana (t) adalah parameter bebas.</p>
+<section id="contoh-nomer-4">
+<h2>contoh nomer 4 :<a class="headerlink" href="#contoh-nomer-4" title="Link to this heading">#</a></h2>
+<p>Diberikan sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_3 = 6
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; | &amp; 6
+\end{bmatrix}
+\end{split}\]</div>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - R_1
+\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_2: \quad 1 - 1 = 0 \\
+0 - 1 = -1 \\
+2 - 0 = 2 \\
+6 - 5 = 1
+\end{split}\]</div>
+<p>Sehingga, matriks augmented menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; | &amp; 5 \\
+0 &amp; -1 &amp; 2 &amp; | &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Selanjutnya, kita dapat menyelesaikan baris kedua untuk mengekspresikan (x_2) dalam bentuk (x_3):</p>
+<div class="math notranslate nohighlight">
+\[
+-1x_2 + 2x_3 = 1 \implies x_2 = 2x_3 - 1
+\]</div>
+<p>Sekarang kita substitusi (x_2) ke dalam persamaan pertama:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 + (2x_3 - 1) = 5
+\]</div>
+<p>Maka kita dapatkan:</p>
+<p>$$
+x_</p>
 </section>
 </section>
 
@@ -483,8 +542,13 @@ x_2 = t
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">contoh soal eliminasi gaus</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
