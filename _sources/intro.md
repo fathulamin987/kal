@@ -266,3 +266,46 @@ Setelah melakukan perhitungan, kita mendapatkan:
 
 $$
 R_2: \quad 2 - 2 \cdot 1
+
+
+### Eliminasi gauss
+
+adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.
+
+Langkah-langkah Eliminasi Gauss :
+1. Penyusunan Matriks Augmented
+Sistem persamaan linear diubah menjadi matriks augmented. Misalnya, untuk sistem persamaan berikut:
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{align}
+    2x + 3y - z &= 1 \\
+    4x + y + 2z &= 2 \\
+    -2x + 5y + 3z &= 3
+\end{align}
+
+Matriks augmentednya adalah:
+
+\[
+\begin{bmatrix}
+    2 & 3 & -1 & 1 \\
+    4 & 1 & 2 & 2 \\
+    -2 & 5 & 3 & 3
+\end{bmatrix}
+\]
+
+\end{document}
+
+2. Transformasi ke Bentuk Segitiga Atas
+Proses utama dalam eliminasi Gauss adalah membuat matriks menjadi matriks segitiga atas, yaitu bentuk di mana semua elemen di bawah diagonal utama menjadi nol. Ini dicapai dengan melakukan operasi baris elementer, yang meliputi:
+
+> Pertukaran baris (swap rows),
+>Perkalian baris dengan konstanta (scaling a row),
+>Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).
+Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol dengan cara mengganti baris menggunakan operasi aritmatika pada baris-baris yang ada.
+
+3. Substitusi Mundur
+Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.
