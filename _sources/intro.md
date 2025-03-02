@@ -268,7 +268,7 @@ $$
 R_2: \quad 2 - 2 \cdot 1
 
 
-### Eliminasi gauss
+> ### Eliminasi gauss
 
 adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.
 
@@ -279,11 +279,11 @@ Sistem persamaan linear diubah menjadi matriks augmented. Misalnya, untuk sistem
 2. Transformasi ke Bentuk Segitiga Atas
 Proses utama dalam eliminasi Gauss adalah membuat matriks menjadi matriks segitiga atas, yaitu bentuk di mana semua elemen di bawah diagonal utama menjadi nol. Ini dicapai dengan melakukan operasi baris elementer, yang meliputi:
 
-> Pertukaran baris (swap rows),
+• Pertukaran baris (swap rows),
 
-> Perkalian baris dengan konstanta (scaling a row),
+• Perkalian baris dengan konstanta (scaling a row),
 
-> Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).
+• Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).
 
 Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol dengan cara mengganti baris menggunakan operasi aritmatika pada baris-baris yang ada.
 
