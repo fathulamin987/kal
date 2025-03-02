@@ -269,7 +269,6 @@ R_2: \quad 2 - 2 \cdot 1
 
 
 > ### Eliminasi gauss
-
 adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.
 
 Langkah-langkah Eliminasi Gauss :
@@ -291,8 +290,7 @@ Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol d
 Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.
 
 
-### Eliminasi Gauss-Jordan 
-
+> ### Eliminasi Gauss-Jordan 
 adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk matriks identitas di sisi kiri. Setelah itu, solusi sistem langsung dapat dibaca dari kolom kanan.
 
 Langkah-langkah:
