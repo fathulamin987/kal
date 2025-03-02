@@ -311,13 +311,7 @@ Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol d
 3. Substitusi Mundur
 Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.
 
-\documentclass{article}
-\usepackage{amsmath}
-\usepackage{amsfonts}
 
-\begin{document}
-
-% Sistem Persamaan
 \begin{align*}
 2x + 3y - z &= 1 \\
 4x + y + 2z &= 2 \\
@@ -332,5 +326,3 @@ Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat mengguna
 -2 & 5 & 3 & 3
 \end{bmatrix}
 \]
-
-\end{document}
