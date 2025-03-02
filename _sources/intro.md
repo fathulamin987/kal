@@ -272,25 +272,38 @@ R_2: \quad 2 - 2 \cdot 1
 
 pembelajaran:
 • Memahami Konsep dasar Operasi Baris Elementer.
+
 • Mengetahui Tiga jenis operasi baris elementer.
+
 • Mengetahui Aplikasi OBE dalam aljabar linear.
+
 • Mengetahui Algoritma Eliminasi Gauss
 
+
 > Matriks adalah kumpulan bilangan yang disusun dalam baris dan kolom.
+
 
 Tiga operasi baris elementer :
 1. Menukar Dua Baris
 2.Mengalikan baris dengan skalar non-nol
 3.Menambahkan Kelipatan Satu Baris ke Baris Lain
 
+
 *Bentuk Eselon Baris dan Eselon Baris Tereduksi :*
 
 *Bentuk Eselon Baris:*
+
 • Baris nol berada di bawah baris non-nol.
+
 • Elemen pivot (elemen pertama non-nol pada suatu baris) berada di kanan elemen pivot baris sebelumnya.
+
+
 *Bentuk Eselon Baris Tereduksi:*
+
 • Memenuhi semua syarat bentuk eselon baris.
+
 • Setiap elemen pivot bernilai 1.
+
 • Kolom yang mengandung elemen pivot hanya memiliki satu elemen non-nol (yaitu pivot).
 
 
@@ -298,13 +311,17 @@ Tiga operasi baris elementer :
 
 *Aplikasi operasi baris elementer :*
 • Menyelesaikan system persamaan linier
-Menggunakan eliminasi gauss atau gauss-jordan
+Menggunakan eliminasi gauss atau gauss-
+
 • Mencari invest matriks
-Menggabungkan matriks dengan matriks identitas dan melakukan 
+Menggabungkan matriks dengan matriks identitas dan melakukan
+
 • Menghitung determinan
 Menggunakan reduksi baris untuk menyederhanakan perhitungan determinan.
 
+
 > Kofiseien : nilai yang melekat pada suatu variable
+
 
 > ### Eliminasi gauss
 > adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.
