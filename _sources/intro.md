@@ -271,6 +271,7 @@ R_2: \quad 2 - 2 \cdot 1
 ## Menyelesaikan Sistem Persamaan Linear menggunakan Eliminasi
 
 pembelajaran:
+
 • Memahami Konsep dasar Operasi Baris Elementer.
 
 • Mengetahui Tiga jenis operasi baris elementer.
