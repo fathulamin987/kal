@@ -377,6 +377,8 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-jordan">Eliminasi Gauss-Jordan</a></li>
 </ul>
 </li>
 </ul>
@@ -621,43 +623,44 @@ x_3 + x_2 = 2
 R_2 \leftarrow R_2 - 2R_1
 \]</div>
 <p>Setelah melakukan perhitungan, kita mendapatkan:</p>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}
-R_2: \quad 2 - 2 \cdot 1\\
-### Eliminasi gauss\\adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.\\Langkah-langkah Eliminasi Gauss :
-1. Penyusunan Matriks Augmented
-Sistem persamaan linear diubah menjadi matriks augmented. Misalnya, untuk sistem persamaan berikut:\\\documentclass{article}
-\usepackage{amsmath}\\\begin{document}\\\begin{split}\begin{align}
-    2x + 3y - z &amp;= 1 \\
-    4x + y + 2z &amp;= 2 \\
-    -2x + 5y + 3z &amp;= 3
-\end{align}\end{split}\\Matriks augmentednya adalah:\\\begin{split}\[
-\begin{bmatrix}
-    2 &amp; 3 &amp; -1 &amp; 1 \\
-    4 &amp; 1 &amp; 2 &amp; 2 \\
-    -2 &amp; 5 &amp; 3 &amp; 3
-\end{bmatrix}
-\]\end{split}\\\end{document}\\2. Transformasi ke Bentuk Segitiga Atas
-Proses utama dalam eliminasi Gauss adalah membuat matriks menjadi matriks segitiga atas, yaitu bentuk di mana semua elemen di bawah diagonal utama menjadi nol. Ini dicapai dengan melakukan operasi baris elementer, yang meliputi:\\&gt; Pertukaran baris (swap rows),
-&gt; Perkalian baris dengan konstanta (scaling a row),
-&gt; Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).\\Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol dengan cara mengganti baris menggunakan operasi aritmatika pada baris-baris yang ada.\\3. Substitusi Mundur
-Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.\end{aligned}\end{align} \]</div>
-<p>\begin{align*}
-2x + 3y - z &amp;= 1 \
-4x + y + 2z &amp;= 2 \
--2x + 5y + 3z &amp;= 3
-\end{align*}
-$$</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\[
-\begin{bmatrix}
-2 &amp; 3 &amp; -1 &amp; 1 \\
-4 &amp; 1 &amp; 2 &amp; 2 \\
--2 &amp; 5 &amp; 3 &amp; 3
-\end{bmatrix}
-\]
-\end{split}\]</div>
+<p>$$
+R_2: \quad 2 - 2 \cdot 1</p>
+</section>
+<section id="eliminasi-gauss">
+<h3>Eliminasi gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h3>
+<p>adalah metode yang digunakan untuk menyelesaikan sistem persamaan linear. Metode ini mengubah sistem persamaan linear ke dalam bentuk yang lebih mudah dipecahkan, biasanya dalam bentuk segitiga atas, dan kemudian menggunakan substitusi mundur untuk menemukan solusi.</p>
+<p>Langkah-langkah Eliminasi Gauss :</p>
+<ol class="arabic simple">
+<li><p>Penyusunan Matriks Augmented
+Sistem persamaan linear diubah menjadi matriks augmented. Misalnya, untuk sistem persamaan berikut:</p></li>
+<li><p>Transformasi ke Bentuk Segitiga Atas
+Proses utama dalam eliminasi Gauss adalah membuat matriks menjadi matriks segitiga atas, yaitu bentuk di mana semua elemen di bawah diagonal utama menjadi nol. Ini dicapai dengan melakukan operasi baris elementer, yang meliputi:</p></li>
+</ol>
+<blockquote>
+<div><p>Pertukaran baris (swap rows),</p>
+</div></blockquote>
+<blockquote>
+<div><p>Perkalian baris dengan konstanta (scaling a row),</p>
+</div></blockquote>
+<blockquote>
+<div><p>Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).</p>
+</div></blockquote>
+<p>Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol dengan cara mengganti baris menggunakan operasi aritmatika pada baris-baris yang ada.</p>
+<ol class="arabic simple" start="3">
+<li><p>Substitusi Mundur
+Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.</p></li>
+</ol>
+</section>
+<section id="eliminasi-gauss-jordan">
+<h3>Eliminasi Gauss-Jordan<a class="headerlink" href="#eliminasi-gauss-jordan" title="Link to this heading">#</a></h3>
+<p>adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk matriks identitas di sisi kiri. Setelah itu, solusi sistem langsung dapat dibaca dari kolom kanan.</p>
+<p>Langkah-langkah:</p>
+<ol class="arabic simple">
+<li><p>Penyusunan Matriks Augmented: Gabungkan matriks koefisien dan hasilnya menjadi matriks augmented.</p></li>
+<li><p>Membuat Elemen Diagonal Menjadi 1: Kalikan baris dengan faktor yang sesuai agar elemen diagonal utama menjadi 1.</p></li>
+<li><p>Membuat Elemen Selain Diagonal Menjadi Nol: Gunakan operasi baris elementer (penjumlahan atau pengurangan kelipatan baris) untuk membuat semua elemen selain diagonal utama menjadi nol.</p></li>
+<li><p>Hasil: Setelah matriks diubah menjadi bentuk identitas di sisi kiri, solusi sistem dapat langsung dibaca di sisi kanan.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -725,6 +728,8 @@ $$</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-jordan">Eliminasi Gauss-Jordan</a></li>
 </ul>
 </li>
 </ul>

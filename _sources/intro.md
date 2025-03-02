@@ -276,34 +276,13 @@ Langkah-langkah Eliminasi Gauss :
 1. Penyusunan Matriks Augmented
 Sistem persamaan linear diubah menjadi matriks augmented. Misalnya, untuk sistem persamaan berikut:
 
-\documentclass{article}
-\usepackage{amsmath}
-
-\begin{document}
-
-\begin{align}
-    2x + 3y - z &= 1 \\
-    4x + y + 2z &= 2 \\
-    -2x + 5y + 3z &= 3
-\end{align}
-
-Matriks augmentednya adalah:
-
-\[
-\begin{bmatrix}
-    2 & 3 & -1 & 1 \\
-    4 & 1 & 2 & 2 \\
-    -2 & 5 & 3 & 3
-\end{bmatrix}
-\]
-
-\end{document}
-
 2. Transformasi ke Bentuk Segitiga Atas
 Proses utama dalam eliminasi Gauss adalah membuat matriks menjadi matriks segitiga atas, yaitu bentuk di mana semua elemen di bawah diagonal utama menjadi nol. Ini dicapai dengan melakukan operasi baris elementer, yang meliputi:
 
 > Pertukaran baris (swap rows),
+
 > Perkalian baris dengan konstanta (scaling a row),
+
 > Penjumlahan atau pengurangan kelipatan baris (adding/subtracting multiples of one row to another).
 
 Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol dengan cara mengganti baris menggunakan operasi aritmatika pada baris-baris yang ada.
@@ -311,20 +290,17 @@ Misalnya, kita akan mengubah elemen-elemen di bawah diagonal utama menjadi nol d
 3. Substitusi Mundur
 Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat menggunakan substitusi mundur untuk menemukan solusi sistem persamaan. Proses substitusi mundur dimulai dari persamaan terakhir, dan solusi ditemukan secara bertahap dengan menggantikan nilai-nilai yang telah ditemukan ke persamaan sebelumnya.
 
-$$
-\begin{align*}
-2x + 3y - z &= 1 \\
-4x + y + 2z &= 2 \\
--2x + 5y + 3z &= 3
-\end{align*}
-$$
 
-$$
-\[
-\begin{bmatrix}
-2 & 3 & -1 & 1 \\
-4 & 1 & 2 & 2 \\
--2 & 5 & 3 & 3
-\end{bmatrix}
-\]
-$$
+### Eliminasi Gauss-Jordan 
+
+adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk matriks identitas di sisi kiri. Setelah itu, solusi sistem langsung dapat dibaca dari kolom kanan.
+
+Langkah-langkah:
+
+1. Penyusunan Matriks Augmented: Gabungkan matriks koefisien dan hasilnya menjadi matriks augmented.
+
+2. Membuat Elemen Diagonal Menjadi 1: Kalikan baris dengan faktor yang sesuai agar elemen diagonal utama menjadi 1.
+
+3. Membuat Elemen Selain Diagonal Menjadi Nol: Gunakan operasi baris elementer (penjumlahan atau pengurangan kelipatan baris) untuk membuat semua elemen selain diagonal utama menjadi nol.
+
+4. Hasil: Setelah matriks diubah menjadi bentuk identitas di sisi kiri, solusi sistem dapat langsung dibaca di sisi kanan.
