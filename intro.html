@@ -374,9 +374,11 @@
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-eliminasi-gaus">contoh soal eliminasi gaus</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-2-sistem-persamaan">soal no 2 sistem persamaan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Langkah 1: Eliminasi Baris</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linear-menggunakan-eliminasi">Menyelesaikan Sistem Persamaan Linear menggunakan Eliminasi</a></li>
@@ -589,9 +591,9 @@ x_3 = p
 \end{cases}
 \end{split}\]</div>
 <p>di mana (p) adalah parameter bebas.</p>
-</section>
-<section id="penyelesaian-sistem-persamaan-linear">
-<h2>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<section id="soal-no-1-sistem-persamaan">
+<h3>soal no 1 sistem persamaan:<a class="headerlink" href="#soal-no-1-sistem-persamaan" title="Link to this heading">#</a></h3>
+<p>Contoh Soal 1</p>
 <p>Diberikan sistem persamaan:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -614,6 +616,7 @@ x_3 + x_2 = 2
 0 &amp; 1 &amp; 1 &amp; | &amp; 2
 \end{bmatrix}
 \end{split}\]</div>
+</section>
 <section id="langkah-1-eliminasi-baris">
 <h3>Langkah 1: Eliminasi Baris<a class="headerlink" href="#langkah-1-eliminasi-baris" title="Link to this heading">#</a></h3>
 <p>Langkah pertama adalah membuat elemen di bawah pivot (elemen pertama di kolom pertama) menjadi nol. Kita lakukan operasi berikut:</p>
@@ -622,8 +625,140 @@ x_3 + x_2 = 2
 R_2 \leftarrow R_2 - 2R_1
 \]</div>
 <p>Setelah melakukan perhitungan, kita mendapatkan:</p>
-<p>$$
-R_2: \quad 2 - 2 \cdot 1</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; 0 &amp; 0 &amp; | &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; | &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dari hasil tersebut tidak diperlukan langkah selanjutnya karena elemen di bawah pivot sudah 1 kolom ke 2</p>
+<p>Selanjutnya, menyelesaikan sistem persamaan</p>
+<p>dari persamaan 1 diperoleh:</p>
+<div class="math notranslate nohighlight">
+\[x_1 + x_2 + x_3 = 6\]</div>
+<p>untuk persamaan 2 tidak diperoleh informasi karena 0=0</p>
+<p>dari persamaan 3 diperoleh:</p>
+<div class="math notranslate nohighlight">
+\[x_2 + x_3 = 2\]</div>
+<p>dari persamaan 3 dapat diselesaikan untuk <span class="math notranslate nohighlight">\(x_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[x_2 = 2 - x_3\]</div>
+<p>maka, untuk <span class="math notranslate nohighlight">\(x_2\)</span> ini bisa disubtitusikan pada persamaan pertama, maka diperoleh:</p>
+<div class="math notranslate nohighlight">
+\[x_1 + 2x_2 + 3x_3 = 6\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 2x_2 (2-x_3) + 3x_3 = 6\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 4-2x_3 + x_3 = 6\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 4 + x_3 = 6\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 = 6 - 4 - x_3\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 = 2 - x_3\]</div>
+<p>kesimpulan solusi:
+$<span class="math notranslate nohighlight">\(x_1 = 2- x_3\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x_2 = 2 - x_3\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x_3=x_3\)</span>$</p>
+<p>untuk <span class="math notranslate nohighlight">\(x_3\)</span> parameter bebas tidak ada yang membatasi.</p>
+</section>
+<section id="soal-no-2-sistem-persamaan">
+<h3>soal no 2 sistem persamaan:<a class="headerlink" href="#soal-no-2-sistem-persamaan" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+x_1 + x_2 + x_3 = 3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+2x_1 + x_3 = 5
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1 + 2x_2 = 3
+\]</div>
+<p>Kita akan menyelesaikannya menggunakan metode eliminasi Gauss. Pertama, kita tuliskan sistem ini dalam bentuk matriks augmented:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp; 3 \\
+2 &amp; 0 &amp; 1 &amp; | &amp; 5 \\
+1 &amp; 2 &amp; 0 &amp; | &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="id1">
+<h3>Langkah 1: Eliminasi Baris<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Langkah pertama adalah membuat elemen di bawah pivot (baris 2 kolom 1 dan baris 3 kolom 1) menjadi nol. Kita lakukan operasi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - 2R_1
+\]</div>
+<div class="math notranslate nohighlight">
+\[R_3 \leftarrow R_3 - R_1\]</div>
+<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; -2 &amp; -1 &amp; | &amp; -1 \\
+0 &amp; 1 &amp; -1 &amp; | &amp; 0
+\end{bmatrix}
+\end{split}\]</div>
+<p>selanjutnya jadikan 0 pada baris ke 3 kolom ke 2</p>
+<div class="math notranslate nohighlight">
+\[R_3 \leftarrow R_3 + 1/2R_2\]</div>
+<p>maka akan menjadi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; -2 &amp; -1 &amp; | &amp; -1 \\
+0 &amp; 0 &amp; -3/2 &amp; | &amp; -1/2
+\end{bmatrix}
+\end{split}\]</div>
+<p>selanjutnya rubah elemen baris ke 3 kolom ke 3 menjadi 1</p>
+<div class="math notranslate nohighlight">
+\[R_3 \rightarrow -2/3R_3\]</div>
+<p>maka menjadi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; -2 &amp; -1 &amp; | &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; | &amp; 1/3
+\end{bmatrix}
+\end{split}\]</div>
+<p>langkah selanjutnya yaitu subtitusi:</p>
+<p>dari persamaan 3 diperoleh:
+$<span class="math notranslate nohighlight">\(x_3 = 1/3\)</span>$</p>
+<p>dari persamaan 2 diperoleh:
+$<span class="math notranslate nohighlight">\(-2x_2 - 1x_3 = -1\)</span>$</p>
+<p>kita subtitusikan dari persamaan 3:
+$<span class="math notranslate nohighlight">\(-2x_2 - 1x_3 = -1\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(-2x_2 - 1/3 = -1 \)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(-2x_2 = -1 + 1/3 = -2/3\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x_2 = -2/3 + 2\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(x_2 = 1/3\)</span>$</p>
+<p>sekarang memiliki <span class="math notranslate nohighlight">\(x_2= 1/3\)</span> dan <span class="math notranslate nohighlight">\(x_3= 1/3\)</span> maka subtitusi di baris pertama, akan diperoleh</p>
+<div class="math notranslate nohighlight">
+\[x_1 + x_2 + x_3 = 3\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 1/3 + 1/3 = 3\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 2/3 = 3\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 = 3 - 2/3\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 = 7/3\]</div>
+<p>jadi, solusi penyelesaiannya adalah:</p>
+<div class="math notranslate nohighlight">
+\[x_1 = 7/3\]</div>
+<div class="math notranslate nohighlight">
+\[x_2= 1/3\]</div>
+<div class="math notranslate nohighlight">
+\[x_3 = 1/3\]</div>
 </section>
 </section>
 <section id="menyelesaikan-sistem-persamaan-linear-menggunakan-eliminasi">
@@ -756,9 +891,11 @@ Setelah kita mendapatkan matriks dalam bentuk segitiga atas, kita dapat mengguna
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-eliminasi-gaus">contoh soal eliminasi gaus</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3">contoh 3 :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear">Penyelesaian Sistem Persamaan Linear</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-nomer-4">contoh nomer 4 :</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-1-sistem-persamaan">soal no 1 sistem persamaan:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-eliminasi-baris">Langkah 1: Eliminasi Baris</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-no-2-sistem-persamaan">soal no 2 sistem persamaan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Langkah 1: Eliminasi Baris</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-sistem-persamaan-linear-menggunakan-eliminasi">Menyelesaikan Sistem Persamaan Linear menggunakan Eliminasi</a></li>
