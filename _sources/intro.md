@@ -78,7 +78,7 @@ Jika kita melihat persamaan kedua, kita dapat melihat bahwa persamaan kedua sebe
 
 # contoh soal eliminasi gaus 
 
-## contoh 3 :
+## contoh soal nomer 3 :
 
 Diberikan sistem persamaan:
 
@@ -144,7 +144,7 @@ $$
 
 di mana \(t\) adalah parameter bebas.
 
-## contoh nomer 4 :
+## contoh soal nomer 4 :
 
 Diberikan sistem persamaan:
 
@@ -230,7 +230,7 @@ $$
 
 di mana \(p\) adalah parameter bebas.
 
-### soal no 1 sistem persamaan:
+### contoh soal nomer 1 sistem persamaan:
 
 
 Contoh Soal 1
@@ -309,7 +309,7 @@ $$x_3=x_3$$
 
 untuk $x_3$ parameter bebas tidak ada yang membatasi.
 
-### soal no 2 sistem persamaan:
+### contoh soal nomer 2 sistem persamaan:
 
 $$
 x_1 + x_2 + x_3 = 3
