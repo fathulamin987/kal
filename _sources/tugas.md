@@ -1,5 +1,5 @@
 # Tugas soal eliminasi gaus 
-### contoh soal nomer 1 sistem persamaan:
+### contoh soal nomer 1 :
 
 Diberikan sistem persamaan:
 
@@ -75,7 +75,7 @@ $$x_3=x_3$$
 
 untuk $x_3$ parameter bebas tidak ada yang membatasi.
 
-### contoh soal nomer 2 sistem persamaan:
+### contoh soal nomer 2 :
 
 $$
 x_1 + x_2 + x_3 = 3
