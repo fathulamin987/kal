@@ -1,6 +1,4 @@
 # Sistem Linier
-
-#### sistem linier
 sistem linier adalah sistem yang beroperasi dengan cara yang proporsional dan terukur, di mana perubahan pada input menghasilkan perubahan yang sebanding pada output.
 
 #### Persamaan linier
