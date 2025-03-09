@@ -1,4 +1,4 @@
-# PENYELESAIAN SISTEM PERSAMAAN LINIER
+# Penyelesaian Sistem persamaan Linier
 ## Menyelesaikan Sistem Persamaan Linear menggunakan Eliminasi
 
 pembelajaran:
