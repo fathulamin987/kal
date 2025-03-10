@@ -1,7 +1,7 @@
 # Sistem Linier
 sistem linier adalah sistem yang beroperasi dengan cara yang proporsional dan terukur, di mana perubahan pada input menghasilkan perubahan yang sebanding pada output.
 
-#### Persamaan linier
+### Persamaan linier
 Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara variabel yang memiliki pangkat tertinggi 1 (linear)
 
 Contoh persamaan linier dengan satu variabel adalah :
@@ -12,7 +12,7 @@ Contoh persamaan dengan dua variabel, seperti :
 
 𝑥 dan 𝑦 tersebut adalah variabel, dan grafiknya akan membentuk garis lurus di bidang koordinat dua dimensi.
 
-#### Sistem persamaan linier
+### Sistem persamaan linier
 Sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang melibatkan variabel yang sama.
 
  contoh sebuah sistem persamaan linier dengan dua variabel bisa berbentuk seperti ini:
@@ -27,7 +27,7 @@ Sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang mel
 Dalam contoh ini, kita memiliki dua persamaan linier yang melibatkan dua variabel, 
 𝑥 dan 𝑦 Sistem ini mencari nilai-nilai 𝑥 dan 𝑦 yang memenuhi kedua persamaan sekaligus.
 
-##### penyelesaian tunggal
+### penyelesaian tunggal
 Penyelesaian tunggal berarti ada satu nilai unik ( terdapat hanya satu solusi yang memenuhi semua persamaan dalam sistem tersebut ) 𝑥 dan 𝑦 yang membuat kedua persamaan ini benar pada saat bersamaan.
 
 Contoh :
@@ -43,7 +43,7 @@ Contoh :
 ​
  
 
-##### Tidak memiliki penyelesaian
+### Tidak memiliki penyelesaian
  dalam sistem persamaan linier terjadi ketika sistem tersebut bertentangan, yang berarti tidak ada kombinasi nilai variabel yang dapat memenuhi semua persamaan dalam sistem tersebut secara bersamaan.
 
  Contoh :
@@ -60,7 +60,7 @@ Contoh :
  
 Jika kita mencoba menyelesaikan sistem ini, kita akan melihat bahwa kedua persamaan ini saling bertentangan. Dalam hal ini, meskipun koefisien dari 𝑥 dan 𝑦 dalam kedua persamaan tampak berhubungan, konstanta di sisi kanan berbeda, yang berarti kedua garis akan berparalel dan tidak akan berpotongan.
 
-##### Memiliki banyak penyelesaian
+### Memiliki banyak penyelesaian
 disebut memiliki banyak penyelesaian dikarenakan semua persamaan dalam sistem tersebut menggambarkan hubungan yang sama, sehingga tidak ada batasan unik untuk nilai variabel. Dalam hal ini, solusi sistem tersebut bukan hanya satu titik, melainkan seluruh himpunan titik yang terletak pada satu garis atau lebih (tergantung pada jumlah variabel dalam sistem).
 
 Contoh : 
