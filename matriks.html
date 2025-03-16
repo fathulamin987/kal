@@ -173,6 +173,12 @@
 <li class="toctree-l1"><a class="reference internal" href="penyelesaianlinier.html">Penyelesaian Sistem persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Tugas soal eliminasi gaus</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks</a></li>
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -365,12 +371,24 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">Perkalian Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">Perkalian Skalar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">Fungsi untuk menghitung invers matriks 3x3 secara manual</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisikan-matriks-a-dan-vektor-b">Definisikan matriks A dan vektor b</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-invers-matriks-a">Hitung invers matriks A</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-solusi-x-menggunakan-x-a-1-b">Hitung solusi x menggunakan x = A^(-1) * b</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-hasil">Cetak hasil</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -638,6 +656,196 @@ Hasil Perkalian Skalar A:
 </div>
 </div>
 </section>
+<section id="penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">
+<h2>Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)<a class="headerlink" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
+</section>
+<section id="latihan-soal">
+<h2>Latihan Soal<a class="headerlink" href="#latihan-soal" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Langkah 1: Tuliskan Sistem Persamaan Linear dalam Bentuk Matriks</p></li>
+</ol>
+<p>Diberikan sistem persamaan:
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+-7x_1 - 6x_2 - 12x_3 &amp;= -33 \\
+5x_1 + 5x_2 + 7x_3 &amp;= 24 \\
+x_1 + 4x_3 &amp;= 5
+\end{aligned}\)</span>$</p>
+<p>Kita ubah dalam bentuk matriks <span class="math notranslate nohighlight">\(Ax = b\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(A =
+\begin{bmatrix}
+-7 &amp; -6 &amp; -12 \\
+5 &amp; 5 &amp; 7 \\
+1 &amp; 0 &amp; 4
+\end{bmatrix}
+, \quad
+x =
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3
+\end{bmatrix}
+, \quad
+b =
+\begin{bmatrix}
+-33 \\
+24 \\
+5
+\end{bmatrix}\)</span></p>
+<p>Kita ingin mencari solusi <span class="math notranslate nohighlight">\(x_1, x_2, x_3\)</span> menggunakan invers matriks :</p>
+<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Langkah 2: Mencari Invers Matriks <span class="math notranslate nohighlight">\(A {-1}\)</span> dengan OBE</p></li>
+</ol>
+<p>Kita bentuk matriks augmented <span class="math notranslate nohighlight">\([A | I]\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|ccc}
+-7 &amp; -6 &amp; -12 &amp; 1 &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}
+\right]\)</span></p>
+<p>Lakukan Operasi Baris Elementer (OBE) untuk mengubah <span class="math notranslate nohighlight">\(A\)</span> menjadi matriks identitas <span class="math notranslate nohighlight">\(I\)</span>, sambil menerapkan perubahan yang sama pada bagian kanan untuk mendapatkan <span class="math notranslate nohighlight">\(A^{-1}\)</span></p>
+<ul class="simple">
+<li><p>Step 1: Ubah Elemen (1,1) menjadi 1</p></li>
+</ul>
+<p>Bagi baris pertama dengan <span class="math notranslate nohighlight">\(-7\)</span> agar elemen pertama menjadi 1:</p>
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow \frac{R_1}{-7}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\left[
+\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}
+\right]\)</span></p>
+<ul class="simple">
+<li><p>Step 2: Hilangkan Elemen di bawah Pivot (Kolom 1)</p></li>
+</ul>
+<p>Gunakan <span class="math notranslate nohighlight">\(R_1\)</span> untuk mengubah elemen (2,1) dan (3,1) menjadi nol:</p>
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 5R_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - R_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; -\frac{7}{7} &amp; -\frac{16}{7} &amp; \frac{5}{7} &amp; 1 &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; -\frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{array}
+\right]\)</span></p>
+<ul class="simple">
+<li><p>Step 3: Ubah Elemen (2,2) menjadi 1</p></li>
+</ul>
+<p>Bagi baris kedua dengan <span class="math notranslate nohighlight">\(\frac{5}{7}\)</span> agar elemen kedua menjadi 1:</p>
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 \times \frac{7}{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\left[
+\begin{array}{ccc|ccc}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{array}
+\right]\)</span></p>
+<ul class="simple">
+<li><p>Step 4: Hilangkan Elemen di Atas dan Bawah Pivot (Kolom 2)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - \frac{6}{7} R_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 + \frac{6}{7} R_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|ccc}
+1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; 0 &amp; \frac{35}{35} &amp; \frac{5}{35} &amp; \frac{25}{35} &amp; 1
+\end{array}
+\right]\)</span></p>
+<ul class="simple">
+<li><p>Step 5: Ubah Elemen (3,3) menjadi 1</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 \times \frac{35}{22}\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\left[
+\begin{array}{ccc|ccc}
+1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; \frac{11}{22} \times \frac{35}{22} &amp; \frac{42}{35} \times \frac{35}{22} &amp; \frac{35}{22} \times \frac{35}{22}
+\end{array}
+\right]
+\)</span></p>
+<p>Setelah langkah-langkah lebih lanjut, kita mendapatkan matriks identitas di kiri dan invers matriks <span class="math notranslate nohighlight">\(A^{-1}\)</span> di kanan.</p>
+<ol class="arabic simple" start="3">
+<li><p>Langkah 3: Hitung <span class="math notranslate nohighlight">\(x = A^{-1} b\)</span></p></li>
+</ol>
+<p>Sekarang kita gunakan <span class="math notranslate nohighlight">\(A^{-1}\)</span> untuk menghitung:</p>
+<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
+<p>Dihitung menggunakan Python, kita mendapatkan:</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{aligned}
+x_1 &amp;= -3 \\
+x_2 &amp;= 5 \\
+x_3 &amp;= 2
+\end{aligned}\)</span></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">
+<h1>Fungsi untuk menghitung invers matriks 3x3 secara manual<a class="headerlink" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual" title="Link to this heading">#</a></h1>
+<p>def inverse_matrix_3x3(A):
+# Menentukan determinan matriks
+det = (A[0][0] * (A[1][1] * A[2][2] - A[1][2] * A[2][1]) -
+A[0][1] * (A[1][0] * A[2][2] - A[1][2] * A[2][0]) +
+A[0][2] * (A[1][0] * A[2][1] - A[1][1] * A[2][0]))</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if det == 0:
+    raise ValueError(&quot;Matriks tidak memiliki invers (det = 0)&quot;)
+
+# Matriks adjoin
+adj = [
+    [
+        (A[1][1] * A[2][2] - A[1][2] * A[2][1]),
+        -(A[0][1] * A[2][2] - A[0][2] * A[2][1]),
+        (A[0][1] * A[1][2] - A[0][2] * A[1][1])
+    ],
+    [
+        -(A[1][0] * A[2][2] - A[1][2] * A[2][0]),
+        (A[0][0] * A[2][2] - A[0][2] * A[2][0]),
+        -(A[0][0] * A[1][2] - A[0][2] * A[1][0])
+    ],
+    [
+        (A[1][0] * A[2][1] - A[1][1] * A[2][0]),
+        -(A[0][0] * A[2][1] - A[0][1] * A[2][0]),
+        (A[0][0] * A[1][1] - A[0][1] * A[1][0])
+    ]
+]
+
+# Matriks invers = (1/det) * adj
+A_inv = [[adj[i][j] / det for j in range(3)] for i in range(3)]
+
+return A_inv
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">
+<h1>Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1<a class="headerlink" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1" title="Link to this heading">#</a></h1>
+<p>def multiply_matrix_vector(A, b):
+return [sum(A[i][j] * b[j] for j in range(3)) for i in range(3)]</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisikan-matriks-a-dan-vektor-b">
+<h1>Definisikan matriks A dan vektor b<a class="headerlink" href="#definisikan-matriks-a-dan-vektor-b" title="Link to this heading">#</a></h1>
+<p>A = [[-7, -6, -12],
+[5, 5, 7],
+[1, 0, 4]]</p>
+<p>b = [-33, 24, 5]</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hitung-invers-matriks-a">
+<h1>Hitung invers matriks A<a class="headerlink" href="#hitung-invers-matriks-a" title="Link to this heading">#</a></h1>
+<p>A_inv = inverse_matrix_3x3(A)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hitung-solusi-x-menggunakan-x-a-1-b">
+<h1>Hitung solusi x menggunakan x = A^(-1) * b<a class="headerlink" href="#hitung-solusi-x-menggunakan-x-a-1-b" title="Link to this heading">#</a></h1>
+<p>x = multiply_matrix_vector(A_inv, b)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cetak-hasil">
+<h1>Cetak hasil<a class="headerlink" href="#cetak-hasil" title="Link to this heading">#</a></h1>
+<p>print(f”x1 = {x[0]}”)
+print(f”x2 = {x[1]}”)
+print(f”x3 = {x[2]}”)</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -696,12 +904,24 @@ Hasil Perkalian Skalar A:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">Perkalian Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">Perkalian Skalar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">Fungsi untuk menghitung invers matriks 3x3 secara manual</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisikan-matriks-a-dan-vektor-b">Definisikan matriks A dan vektor b</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-invers-matriks-a">Hitung invers matriks A</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-solusi-x-menggunakan-x-a-1-b">Hitung solusi x menggunakan x = A^(-1) * b</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-hasil">Cetak hasil</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
