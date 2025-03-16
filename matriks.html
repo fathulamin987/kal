@@ -173,12 +173,6 @@
 <li class="toctree-l1"><a class="reference internal" href="penyelesaianlinier.html">Penyelesaian Sistem persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Tugas soal eliminasi gaus</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks</a></li>
-
-
-
-
-
-
 </ul>
 
     </div>
@@ -371,7 +365,6 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
@@ -380,15 +373,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">Fungsi untuk menghitung invers matriks 3x3 secara manual</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisikan-matriks-a-dan-vektor-b">Definisikan matriks A dan vektor b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-invers-matriks-a">Hitung invers matriks A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-solusi-x-menggunakan-x-a-1-b">Hitung solusi x menggunakan x = A^(-1) * b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-hasil">Cetak hasil</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -783,69 +767,75 @@ x_1 &amp;= -3 \\
 x_2 &amp;= 5 \\
 x_3 &amp;= 2
 \end{aligned}\)</span></p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">
-<h1>Fungsi untuk menghitung invers matriks 3x3 secara manual<a class="headerlink" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual" title="Link to this heading">#</a></h1>
-<p>def inverse_matrix_3x3(A):
-# Menentukan determinan matriks
-det = (A[0][0] * (A[1][1] * A[2][2] - A[1][2] * A[2][1]) -
-A[0][1] * (A[1][0] * A[2][2] - A[1][2] * A[2][0]) +
-A[0][2] * (A[1][0] * A[2][1] - A[1][1] * A[2][0]))</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if det == 0:
-    raise ValueError(&quot;Matriks tidak memiliki invers (det = 0)&quot;)
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fungsi untuk menghitung invers matriks 3x3 secara manual</span>
+<span class="k">def</span> <span class="nf">inverse_matrix_3x3</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="c1"># Menentukan determinan matriks</span>
+    <span class="n">det</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span>
+           <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span>
+           <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
 
-# Matriks adjoin
-adj = [
-    [
-        (A[1][1] * A[2][2] - A[1][2] * A[2][1]),
-        -(A[0][1] * A[2][2] - A[0][2] * A[2][1]),
-        (A[0][1] * A[1][2] - A[0][2] * A[1][1])
-    ],
-    [
-        -(A[1][0] * A[2][2] - A[1][2] * A[2][0]),
-        (A[0][0] * A[2][2] - A[0][2] * A[2][0]),
-        -(A[0][0] * A[1][2] - A[0][2] * A[1][0])
-    ],
-    [
-        (A[1][0] * A[2][1] - A[1][1] * A[2][0]),
-        -(A[0][0] * A[2][1] - A[0][1] * A[2][0]),
-        (A[0][0] * A[1][1] - A[0][1] * A[1][0])
-    ]
-]
+    <span class="k">if</span> <span class="n">det</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Matriks tidak memiliki invers (det = 0)&quot;</span><span class="p">)</span>
 
-# Matriks invers = (1/det) * adj
-A_inv = [[adj[i][j] / det for j in range(3)] for i in range(3)]
+    <span class="c1"># Matriks adjoin</span>
+    <span class="n">adj</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span>
+            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
+            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
+            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
+            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
+            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
 
-return A_inv
+    <span class="c1"># Matriks invers = (1/det) * adj</span>
+    <span class="n">A_inv</span> <span class="o">=</span> <span class="p">[[</span><span class="n">adj</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">/</span> <span class="n">det</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+    
+    <span class="k">return</span> <span class="n">A_inv</span>
+
+<span class="c1"># Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</span>
+<span class="k">def</span> <span class="nf">multiply_matrix_vector</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+
+<span class="c1"># Definisikan matriks A dan vektor b</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">12</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">33</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># Hitung invers matriks A</span>
+<span class="n">A_inv</span> <span class="o">=</span> <span class="n">inverse_matrix_3x3</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Hitung solusi x menggunakan x = A^(-1) * b</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">multiply_matrix_vector</span><span class="p">(</span><span class="n">A_inv</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x1 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x2 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x3 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x1 = -3.0
+x2 = 5.0
+x3 = 2.0
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">
-<h1>Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1<a class="headerlink" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1" title="Link to this heading">#</a></h1>
-<p>def multiply_matrix_vector(A, b):
-return [sum(A[i][j] * b[j] for j in range(3)) for i in range(3)]</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="definisikan-matriks-a-dan-vektor-b">
-<h1>Definisikan matriks A dan vektor b<a class="headerlink" href="#definisikan-matriks-a-dan-vektor-b" title="Link to this heading">#</a></h1>
-<p>A = [[-7, -6, -12],
-[5, 5, 7],
-[1, 0, 4]]</p>
-<p>b = [-33, 24, 5]</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hitung-invers-matriks-a">
-<h1>Hitung invers matriks A<a class="headerlink" href="#hitung-invers-matriks-a" title="Link to this heading">#</a></h1>
-<p>A_inv = inverse_matrix_3x3(A)</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hitung-solusi-x-menggunakan-x-a-1-b">
-<h1>Hitung solusi x menggunakan x = A^(-1) * b<a class="headerlink" href="#hitung-solusi-x-menggunakan-x-a-1-b" title="Link to this heading">#</a></h1>
-<p>x = multiply_matrix_vector(A_inv, b)</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="cetak-hasil">
-<h1>Cetak hasil<a class="headerlink" href="#cetak-hasil" title="Link to this heading">#</a></h1>
-<p>print(f”x1 = {x[0]}”)
-print(f”x2 = {x[1]}”)
-print(f”x3 = {x[2]}”)</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -904,7 +894,6 @@ print(f”x3 = {x[2]}”)</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
@@ -913,15 +902,6 @@ print(f”x3 = {x[2]}”)</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-menghitung-invers-matriks-3x3-secara-manual">Fungsi untuk menghitung invers matriks 3x3 secara manual</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-untuk-melakukan-perkalian-matriks-3x3-dengan-vektor-3x1">Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisikan-matriks-a-dan-vektor-b">Definisikan matriks A dan vektor b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-invers-matriks-a">Hitung invers matriks A</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-solusi-x-menggunakan-x-a-1-b">Hitung solusi x menggunakan x = A^(-1) * b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-hasil">Cetak hasil</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
