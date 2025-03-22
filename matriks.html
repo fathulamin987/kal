@@ -812,21 +812,28 @@ X = A^{-1}B =
 <section id="determinan-matriks">
 <h2>determinan matriks<a class="headerlink" href="#determinan-matriks" title="Link to this heading">#</a></h2>
 <p>determinan adalah nilai sklar yang di dapatkan dari hasil matriks bujur sangkar</p>
+<p>Determinan adalah matriks fungsi yang mengaitkan suatu matriks persegi <span class="math notranslate nohighlight">\(A\)</span> dengan sebuah bilangan real (skalar).</p>
 <p>sifat penting determinan :</p>
 <ol class="arabic simple">
-<li><p>determinan matriks identitas</p></li>
-<li><p>baris / kolom nol</p></li>
-<li><p>pertukan baris / kolom</p></li>
-<li><p>kelipatan baris / kolom</p></li>
+<li><p>determinan matriks identitas
+det(I)=1, dimana I adalah matriks identitas</p></li>
+<li><p>baris / kolom nol
+jika ada baris dan kolom yang semuanya nol, makan det(A)=0</p></li>
+<li><p>pertukan baris / kolom
+Jika dua baris atau kolom dipertukarkan, determinan berubah tanda.</p></li>
+<li><p>kelipatan baris / kolom
+Jika satu baris atau kolom dikalikan dengan skalar <span class="math notranslate nohighlight">\(K\)</span>, maka determinan menjadi <span class="math notranslate nohighlight">\(K\)</span> det(𝐴)</p></li>
 <li><p>matriks <strong>singular</strong> matriks yang determinannya 0 / tidak mempunyai invers sedangkan <strong>non singular</strong> matriks yang mempunyai invers</p></li>
 </ol>
 <section id="minor-matriks">
 <h3>minor matriks<a class="headerlink" href="#minor-matriks" title="Link to this heading">#</a></h3>
-<p>minor adalah determinan dari sub matriks</p>
+<p>Minor adalah nilai determinan submatriks yang diperoleh dengan menghapus baris dan kolom tertentu dari matriks</p>
+<p>Definisi minor : Minor elemen <span class="math notranslate nohighlight">\(𝑎_𝑖𝑗\)</span> adalah determinan submatriks yang diperoleh dengan menghapus baris ke <span class="math notranslate nohighlight">\(-𝑖\)</span> dan kolom ke <span class="math notranslate nohighlight">\(-𝑗\)</span> dari matriks asli.</p>
 </section>
 <section id="cofaktor-matriks">
 <h3>cofaktor matriks<a class="headerlink" href="#cofaktor-matriks" title="Link to this heading">#</a></h3>
-<p>cofactor perkalian minor dengan cofactor</p>
+<p>Hasil perkalian minor dengan faktor tanda <span class="math notranslate nohighlight">\((−1)^(𝑖+𝑗),\)</span> di mana <span class="math notranslate nohighlight">\(i\)</span> adalah indeks baris dan <span class="math notranslate nohighlight">\(j\)</span> adalah indeks kolom.</p>
+<p>Definisi cofactor matriks : elemen <span class="math notranslate nohighlight">\(𝑎_𝑖𝑗\)</span> adalah hasil perkalian minor <span class="math notranslate nohighlight">\(𝑀_𝑖𝑗\)</span> dengan faktor tanda <span class="math notranslate nohighlight">\((−1)^(𝑖+𝑗).\)</span></p>
 </section>
 <section id="mencari-determinan-dengan-konsep-minor-dan-cofaktor-matriks-beri-contoh-3x3-4x4-dan-5x5">
 <h3>mencari determinan dengan konsep minor dan cofaktor matriks. beri contoh 3x3 4x4 dan 5x5<a class="headerlink" href="#mencari-determinan-dengan-konsep-minor-dan-cofaktor-matriks-beri-contoh-3x3-4x4-dan-5x5" title="Link to this heading">#</a></h3>
