@@ -371,7 +371,8 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">Perkalian Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">Perkalian Skalar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">soal:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">determinan matriks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">minor matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cofaktor-matriks">cofaktor matriks</a></li>
@@ -649,198 +650,164 @@ Hasil Perkalian Skalar A:
 <section id="penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">
 <h2>Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)<a class="headerlink" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
 </section>
-<section id="latihan-soal">
-<h2>Latihan Soal<a class="headerlink" href="#latihan-soal" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Langkah 1: Tuliskan Sistem Persamaan Linear dalam Bentuk Matriks</p></li>
-</ol>
-<p>Diberikan sistem persamaan:
-$<span class="math notranslate nohighlight">\(\begin{aligned}
--7x_1 - 6x_2 - 12x_3 &amp;= -33 \\
-5x_1 + 5x_2 + 7x_3 &amp;= 24 \\
-x_1 + 4x_3 &amp;= 5
-\end{aligned}\)</span>$</p>
-<p>Kita ubah dalam bentuk matriks <span class="math notranslate nohighlight">\(Ax = b\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(A =
+<section id="soal">
+<h2>soal:<a class="headerlink" href="#soal" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[-7x_1 - 6x_2 - 12x_3= -33\]</div>
+<div class="math notranslate nohighlight">
+\[5x_1 + 5x_2 + 7x_3= 24\]</div>
+<div class="math notranslate nohighlight">
+\[x_1 + 4x_3= 5\]</div>
+</section>
+<section id="jawaban">
+<h2>Jawaban:<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<p>Dibuat matriks <span class="math notranslate nohighlight">\(A, x = b\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
 \begin{bmatrix}
--7 &amp; -6 &amp; -12 \\
+-7 &amp; -6 &amp; -12\\
 5 &amp; 5 &amp; 7 \\
 1 &amp; 0 &amp; 4
-\end{bmatrix}
-, \quad
-x =
+\end{bmatrix},x: 
 \begin{bmatrix}
-x_1 \\
-x_2 \\
+x_1\\
+x_2\\
 x_3
-\end{bmatrix}
-, \quad
-b =
+\end{bmatrix} =
+B: 
 \begin{bmatrix}
--33 \\
-24 \\
+-33\\
+24\\
 5
-\end{bmatrix}\)</span></p>
-<p>Kita ingin mencari solusi <span class="math notranslate nohighlight">\(x_1, x_2, x_3\)</span> menggunakan invers matriks :</p>
-<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
-<ol class="arabic simple" start="2">
-<li><p>Langkah 2: Mencari Invers Matriks <span class="math notranslate nohighlight">\(A {-1}\)</span> dengan OBE</p></li>
-</ol>
-<p>Kita bentuk matriks augmented <span class="math notranslate nohighlight">\([A | I]\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(
-\left[
+\end{bmatrix}
+\end{split}\]</div>
+<p>Tulis Matriks A berdampingan dengan matriks Identitas:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A: 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
 -7 &amp; -6 &amp; -12 &amp; 1 &amp; 0 &amp; 0 \\
 5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
 \end{array}
-\right]\)</span></p>
-<p>Lakukan Operasi Baris Elementer (OBE) untuk mengubah <span class="math notranslate nohighlight">\(A\)</span> menjadi matriks identitas <span class="math notranslate nohighlight">\(I\)</span>, sambil menerapkan perubahan yang sama pada bagian kanan untuk mendapatkan <span class="math notranslate nohighlight">\(A^{-1}\)</span></p>
+\end{bmatrix}
+\end{split}\]</div>
+<p>Lakukan OBE agar matriks kiri menjadi matriks identitas</p>
+<p>Mencari <span class="math notranslate nohighlight">\(A^{-1}\)</span> menggunakan Operasi Baris Elementer</p>
 <ul class="simple">
-<li><p>Step 1: Ubah Elemen (1,1) menjadi 1</p></li>
+<li><p>Ubah elemen pivot (1,1) menjadi 1.</p></li>
 </ul>
-<p>Bagi baris pertama dengan <span class="math notranslate nohighlight">\(-7\)</span> agar elemen pertama menjadi 1:</p>
-<p><span class="math notranslate nohighlight">\(R_1 \leftarrow \frac{R_1}{-7}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\left[
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1/7\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
 5 &amp; 5 &amp; 7 &amp; 0 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 1
 \end{array}
-\right]\)</span></p>
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
-<li><p>Step 2: Hilangkan Elemen di bawah Pivot (Kolom 1)</p></li>
+<li><p>Nol kan elemen di bawah pivot (kolom 1, baris 2 dan 3)</p></li>
 </ul>
-<p>Gunakan <span class="math notranslate nohighlight">\(R_1\)</span> untuk mengubah elemen (2,1) dan (3,1) menjadi nol:</p>
 <p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 5R_1\)</span></p>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - R_1\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 -  R_1\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
-0 &amp; -\frac{7}{7} &amp; -\frac{16}{7} &amp; \frac{5}{7} &amp; 1 &amp; 0 \\
-0 &amp; -\frac{6}{7} &amp; -\frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
+0 &amp; 5/7 &amp; -13/7 &amp; 5/7 &amp; 1 &amp; 0 \\
+0 &amp; -6/7 &amp; 16/7 &amp; 1/7 &amp; 0 &amp; 1
 \end{array}
-\right]\)</span></p>
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
-<li><p>Step 3: Ubah Elemen (2,2) menjadi 1</p></li>
+<li><p>Ubah elemen pivot (2,2) menjadi 1</p></li>
 </ul>
-<p>Bagi baris kedua dengan <span class="math notranslate nohighlight">\(\frac{5}{7}\)</span> agar elemen kedua menjadi 1:</p>
-<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 \times \frac{7}{5}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\left[
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2  7/5\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
-1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \frac{1}{7} &amp; 0 &amp; 1
+1 &amp; 6/7 &amp; 12/7 &amp; -1/7 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -13/5 &amp; 1/5 &amp; 7/5 &amp; 0 \\
+0 &amp; -6/7 &amp; 16/7 &amp; 1/7 &amp; 0 &amp; 1
 \end{array}
-\right]\)</span></p>
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
-<li><p>Step 4: Hilangkan Elemen di Atas dan Bawah Pivot (Kolom 2)</p></li>
+<li><p>Nol kan elemen di atas dan di bawah pivot (kolom 2, baris 1 dan 3)</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - \frac{6}{7} R_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 + \frac{6}{7} R_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
+<p><span class="math notranslate nohighlight">\(R_1 \leftarrow R_1 - 6/7R_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 + 6/7R_2\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
-1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; \frac{35}{35} &amp; \frac{5}{35} &amp; \frac{25}{35} &amp; 1
+1 &amp; 0 &amp; 36/35 &amp; -13/35 &amp; -6/5 &amp; 0 \\
+0 &amp; 1 &amp; -13/5 &amp; 1/5 &amp; 7/5 &amp; 0 \\
+0 &amp; 0 &amp; 10/7 &amp; 5/3 &amp; 6/5 &amp; 1
 \end{array}
-\right]\)</span></p>
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
-<li><p>Step 5: Ubah Elemen (3,3) menjadi 1</p></li>
+<li><p>Ubah elemen pivot (3,3) menjadi 1</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 \times \frac{35}{22}\)</span></p>
-<p><span class="math notranslate nohighlight">\(
-\left[
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 7//10\)</span></p>
+<p>Hasil:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{bmatrix}
 \begin{array}{ccc|ccc}
-1 &amp; 0 &amp; \frac{42}{35} &amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{1}{5} &amp; \frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; \frac{11}{22} \times \frac{35}{22} &amp; \frac{42}{35} \times \frac{35}{22} &amp; \frac{35}{22} \times \frac{35}{22}
+1 &amp; 0 &amp; 0 &amp; -5/7 &amp; -6/5 &amp; -36/35 \\
+0 &amp; 1 &amp; 0 &amp; 4/7 &amp; 7/5 &amp; 26/35 \\
+0 &amp; 0 &amp; 1 &amp; 1/2 &amp; 3/5 &amp; 7/10
 \end{array}
-\right]
-\)</span></p>
-<p>Setelah langkah-langkah lebih lanjut, kita mendapatkan matriks identitas di kiri dan invers matriks <span class="math notranslate nohighlight">\(A^{-1}\)</span> di kanan.</p>
-<ol class="arabic simple" start="3">
-<li><p>Langkah 3: Hitung <span class="math notranslate nohighlight">\(x = A^{-1} b\)</span></p></li>
-</ol>
-<p>Sekarang kita gunakan <span class="math notranslate nohighlight">\(A^{-1}\)</span> untuk menghitung:</p>
-<p><span class="math notranslate nohighlight">\(x = A^{-1} \cdot b\)</span></p>
-<p>Dihitung menggunakan Python, kita mendapatkan:</p>
-<p><span class="math notranslate nohighlight">\(
-\begin{aligned}
-x_1 &amp;= -3 \\
-x_2 &amp;= 5 \\
-x_3 &amp;= 2
-\end{aligned}\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fungsi untuk menghitung invers matriks 3x3 secara manual</span>
-<span class="k">def</span> <span class="nf">inverse_matrix_3x3</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
-    <span class="c1"># Menentukan determinan matriks</span>
-    <span class="n">det</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span>
-           <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span>
-           <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
-
-    <span class="k">if</span> <span class="n">det</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Matriks tidak memiliki invers (det = 0)&quot;</span><span class="p">)</span>
-
-    <span class="c1"># Matriks adjoin</span>
-    <span class="n">adj</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">[</span>
-            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span>
-            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span>
-            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
-        <span class="p">],</span>
-        <span class="p">[</span>
-            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
-            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
-            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="p">],</span>
-        <span class="p">[</span>
-            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
-            <span class="o">-</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span>
-            <span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="p">]</span>
-    <span class="p">]</span>
-
-    <span class="c1"># Matriks invers = (1/det) * adj</span>
-    <span class="n">A_inv</span> <span class="o">=</span> <span class="p">[[</span><span class="n">adj</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">/</span> <span class="n">det</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-    
-    <span class="k">return</span> <span class="n">A_inv</span>
-
-<span class="c1"># Fungsi untuk melakukan perkalian matriks 3x3 dengan vektor 3x1</span>
-<span class="k">def</span> <span class="nf">multiply_matrix_vector</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-
-<span class="c1"># Definisikan matriks A dan vektor b</span>
-<span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">12</span><span class="p">],</span>
-     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
-     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">33</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-
-<span class="c1"># Hitung invers matriks A</span>
-<span class="n">A_inv</span> <span class="o">=</span> <span class="n">inverse_matrix_3x3</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="c1"># Hitung solusi x menggunakan x = A^(-1) * b</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">multiply_matrix_vector</span><span class="p">(</span><span class="n">A_inv</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="c1"># Cetak hasil</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x1 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x2 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x3 = </span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x1 = -3.0
-x2 = 5.0
-x3 = 2.0
-</pre></div>
-</div>
-</div>
-</div>
+\end{bmatrix}
+\end{split}\]</div>
+<p>Sekarang bagian kanan adalah <span class="math notranslate nohighlight">\(A^{-1}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+A^{-1}
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-5/7 &amp; -6/5 &amp; -36/35 \\
+4/7 &amp; 7/5 &amp; 26/35 \\
+1/2 &amp; 3/5 &amp; 7/10
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Hitung <span class="math notranslate nohighlight">\(X = A^{-1}B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+X = A^{-1}B = 
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-5/7 &amp; -6/5 &amp; -36/35 \\
+4/7 &amp; 7/5 &amp; 26/35 \\
+1/2 &amp; 3/5 &amp; 7/10
+\end{array}
+\end{bmatrix}
+\begin{bmatrix}
+\begin{array}{ccc|ccc}
+-33 \\
+24 \\
+5
+\end{array}
+\end{bmatrix}
+\end{split}\]</div>
+<p>Hitung Perkalian:</p>
+<p><span class="math notranslate nohighlight">\(x_1 = (-5/7)(-33)+(-6/5)(24)+(-36/35)(5)=25\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2 = (4/7)(-33)+(7/5)(24)+(26/35)(5)=-4\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_3 = (1/2)(-33)+(3/5)(24)+(7/10)(5)= 3\)</span></p>
 </section>
 <section id="determinan-matriks">
 <h2>determinan matriks<a class="headerlink" href="#determinan-matriks" title="Link to this heading">#</a></h2>
@@ -918,7 +885,8 @@ x3 = 2.0
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">Perkalian Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">Perkalian Skalar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-peersaman-menggunakan-invers-matriks-invers-dicari-menggunakan-operasi-baris-elementer-obe">Penyelesaian peersaman menggunakan invers Matriks (Invers dicari menggunakan operasi baris elementer  OBE)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-soal">Latihan Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">soal:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">determinan matriks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">minor matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cofaktor-matriks">cofaktor matriks</a></li>
