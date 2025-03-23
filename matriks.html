@@ -852,28 +852,65 @@ kita mempunyai matriks <span class="math notranslate nohighlight">\(A\)</span> :
 \end{bmatrix}
 \end{split}\]</div>
 <p>Menentukan minor dan cofactor :</p>
-<p>Misalnya, minor darai elemen <span class="math notranslate nohighlight">\(a_11 = 1\)</span> adalah :</p>
-<p>M_11=
-$<span class="math notranslate nohighlight">\(
+<p>Misalnya, minor darai elemen <span class="math notranslate nohighlight">\(a_{11} = 1\)</span> adalah :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{11} = 
 \begin{vmatrix}
 5 &amp; 6 \\
-8 &amp; 9
-\end{vmatrix} = (5  -\times 9) - (6 \times 8) = 45 - 48 = -3
-\)</span>$</p>
-<p>M_12=
-$<span class="math notranslate nohighlight">\(
+8 &amp; 9 
+\end{vmatrix} = (5 \times 9) - (6 \times 8) = 45 - 48 = -3
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{12} = 
 \begin{vmatrix}
-5 &amp; 6 \\
-8 &amp; 9
-\end{vmatrix} = (5  -\times 9) - (6 \times 8) = 45 - 48 = -3
-\)</span>$</p>
-<p>M_13=
-$<span class="math notranslate nohighlight">\(
+4 &amp; 6 \\
+7 &amp; 9 
+\end{vmatrix} = (4 \times 9) - (6 \times 7) = 36 - 42 = -6
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+M_{13} = 
 \begin{vmatrix}
 4 &amp; 5 \\
-7 &amp; 8
-\end{vmatrix} = (4  -\times 8) - (5 \times 7) = 32 - 35 = -3
+7 &amp; 8 
+\end{vmatrix} = (4 \times 8) - (5 \times 7) = 32 - 35 = -3
+\end{split}\]</div>
+<p>Kofaktor dihitung dengan rumus:
+$<span class="math notranslate nohighlight">\(
+C_{ij} = (-1)^{i+j} M_{ij}
 \)</span>$</p>
+<p>Jadi, kofaktor dari elemen-elemen pada baris pertama adalah:
+$<span class="math notranslate nohighlight">\(
+C_{11} = (-1)^{1+1}(-3) = -3
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+C_{12} = (-1)^{1+2}(-6) = 6
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+C_{13} = (-1)^{1+3}(-3) = -3
+\)</span>$</p>
+<p>Menghitung determinan Menggunakan Ekspansi Kofaktor</p>
+<p>Determinan matriks A dihitung sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}
+\]</div>
+<p>Substitusi nilai:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(A) = (1 \times -3) + (2 \times 6) + (3 \times -3)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= -3 + 12 - 9
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= 0
+\]</div>
+<p>Jadi, determinan dari matriks A adalah 0, yang berarti matriks ini singular (tidak memiliki invers).</p>
 </section>
 </section>
 </section>
