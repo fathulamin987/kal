@@ -370,13 +370,50 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="tugas">
 <h1>Tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
-<p>Di atas membuktikan bahwa transformasi linier rotasi di bidang 2 dimensi rotasi dalam $<span class="math notranslate nohighlight">\(R^2\)</span>$ dengan matriks :</p>
+<p>Di atas membuktikan bahwa transformasi linier rotasi di bidang 2 dimensi rotasi dalam <span class="math notranslate nohighlight">\(R^2\)</span> dengan matriks :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}A = \begin{bmatrix}
 \cos \theta &amp; -\sin \theta \\
 \sin \theta &amp; \cos \theta
 \end{bmatrix}\end{split}\]</div>
-<p>merupakan transformasi rotasi berlawanan arah jarum jam sebesar sudut $<span class="math notranslate nohighlight">\(theta\)</span>$</p>
+<p>merupakan transformasi rotasi berlawanan arah jarum jam sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<p><em>pembuktian</em></p>
+<p>Misalkan suatu vektor <span class="math notranslate nohighlight">\(V=(x,y)\)</span> dalam koordinat kartesian. Kita dapat menyatakannya dalam koordinat polar sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v} = (x, y) = (r \cos \alpha, r \sin \alpha)
+\]</div>
+<p>dengan</p>
+<p><span class="math notranslate nohighlight">\(r = \left\| V \right\|\)</span> (panjang vektor)</p>
+<p><span class="math notranslate nohighlight">\(\alpha\)</span> adalah sudut antara vektor <span class="math notranslate nohighlight">\(v\)</span> dengan sumbu-x positif</p>
+<p>Transformasi <span class="math notranslate nohighlight">\(A\)</span> bertindak pada <span class="math notranslate nohighlight">\(V\)</span> sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} \cdot \mathbf{v} = 
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\begin{bmatrix}
+r \cos \alpha \\
+r \sin \alpha
+\end{bmatrix} 
+= r \begin{bmatrix}
+\cos \theta \cos \alpha - \sin \theta \sin \alpha \\
+\sin \theta \cos \alpha + \cos \theta \sin \alpha
+\end{bmatrix}\end{split}\]</div>
+<p>Gunakan identitas trigonometri:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+\cos(\alpha + \theta) &amp; = \cos \alpha \cos \theta - \sin \alpha \sin \theta \\
+\sin(\alpha + \theta) &amp; = \sin \alpha \cos \theta + \cos \alpha \sin \theta
+\end{align*}\end{split}\]</div>
+<p>Sehingga:</p>
+<div class="math notranslate nohighlight">
+\[
+A \cdot \mathbf{v} = r \left( \cos(\alpha + \theta), \sin(\alpha + \theta) \right)
+\]</div>
+<p>Artinya, vektor hasil adalah vektor dengan panjang yang sama (karena rotasi mempertahankan panjang), dan sudut terhadap sumbu-x sebesar <span class="math notranslate nohighlight">\(\alpha + \theta\)</span>, yaitu berputar berlawanan arah jarum jam sebesar <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<p>jadi transformasi linier dengan matriks rotasi <span class="math notranslate nohighlight">\(A\)</span> tersebut memang merepresentasikan rotasi sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span> berlawanan arah jarum jam di bidang <span class="math notranslate nohighlight">\(R^2\)</span></p>
 </section>
 
     <script type="text/x-thebe-config">
