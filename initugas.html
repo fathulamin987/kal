@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sistem Linier &#8212; amin</title>
+    <title>Tugas &#8212; amin</title>
   
   
   
@@ -60,12 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'initugas';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Penyelesaian Sistem persamaan Linier" href="penyelesaianlinier.html" />
+    <link rel="prev" title="Matriks" href="matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +115,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +134,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,17 +161,17 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Sistem Linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="penyelesaianlinier.html">Penyelesaian Sistem persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Tugas soal eliminasi gaus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matriks.html">Matriks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="initugas.html">Tugas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas</a></li>
 
 
 
@@ -262,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Finitugas.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +288,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/initugas.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +364,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistem Linier</h1>
+    <h1>Tugas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,12 +374,78 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">Persamaan linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linier">Sistem persamaan linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-tunggal">penyelesaian tunggal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-memiliki-penyelesaian">Tidak memiliki penyelesaian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memiliki-banyak-penyelesaian">Memiliki banyak penyelesaian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">𝐴</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-misalkan-suatu-vektor-v">Bukti:
+Misalkan suatu vektor
+𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v">𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x-y">(
+𝑥
+,
+𝑦
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#r">𝑟</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">𝐴
+⋅
+𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos-sin-sin-cos-r-cos-r-sin">[
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝜃
+sin
+⁡
+𝜃
+cos
+⁡
+𝜃
+]
+[
+𝑟
+cos
+⁡
+𝛼
+𝑟
+sin
+⁡
+𝛼
+]</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos">cos
+⁡
+(
+𝛼
++
+𝜃
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos-cos-sin-sin-sin">cos
+⁡
+𝛼
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝛼
+sin
+⁡
+𝜃
+sin
+⁡
+(
+𝛼
++
+𝜃
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">𝐴
+⋅
+𝑣</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -394,60 +456,260 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sistem-linier">
-<h1>Sistem Linier<a class="headerlink" href="#sistem-linier" title="Link to this heading">#</a></h1>
-<p>sistem linier adalah sistem yang beroperasi dengan cara yang proporsional dan terukur, di mana perubahan pada input menghasilkan perubahan yang sebanding pada output.</p>
-<section id="persamaan-linier">
-<h2>Persamaan linier<a class="headerlink" href="#persamaan-linier" title="Link to this heading">#</a></h2>
-<p>Persamaan linier adalah persamaan matematika yang menggambarkan hubungan antara variabel yang memiliki pangkat tertinggi 1 (linear)</p>
-<p>Contoh persamaan linier dengan satu variabel adalah :
-<em>2𝑥+ 3 = 7</em></p>
-<p>Contoh persamaan dengan dua variabel, seperti :
-<em>3𝑥 + 4𝑦 =12</em></p>
-<p>𝑥 dan 𝑦 tersebut adalah variabel, dan grafiknya akan membentuk garis lurus di bidang koordinat dua dimensi.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas">
+<h1>Tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
+<p>Dari slide yang Anda lampirkan, soal yang dimaksud adalah membuktikan bahwa transformasi linier rotasi di bidang 2 dimensi (rotasi dalam
+𝑅
+2
+R
+2
+) dengan matriks:</p>
 </section>
-<section id="sistem-persamaan-linier">
-<h2>Sistem persamaan linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang melibatkan variabel yang sama.</p>
-<p>contoh sebuah sistem persamaan linier dengan dua variabel bisa berbentuk seperti ini:</p>
-<p>2𝑥+3𝑦=8</p>
-<p>4𝑥−𝑦=2</p>
-<p>​</p>
-<p>Dalam contoh ini, kita memiliki dua persamaan linier yang melibatkan dua variabel,
-𝑥 dan 𝑦 Sistem ini mencari nilai-nilai 𝑥 dan 𝑦 yang memenuhi kedua persamaan sekaligus.</p>
-</section>
-<section id="penyelesaian-tunggal">
-<h2>penyelesaian tunggal<a class="headerlink" href="#penyelesaian-tunggal" title="Link to this heading">#</a></h2>
-<p>Penyelesaian tunggal berarti ada satu nilai unik ( terdapat hanya satu solusi yang memenuhi semua persamaan dalam sistem tersebut ) 𝑥 dan 𝑦 yang membuat kedua persamaan ini benar pada saat bersamaan.</p>
-<p>Contoh :</p>
-<p>2𝑥+3=8</p>
-<p>4𝑥−𝑦=2</p>
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
-<p><img alt="plot" src="_images/penyelesaian_tunggal.png" />
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>𝐴<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>[
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝜃
+sin
+⁡
+𝜃
+cos
+⁡
+𝜃
+]
+A=[
+cosθ
+sinθ
 ​</p>
-</section>
-<section id="tidak-memiliki-penyelesaian">
-<h2>Tidak memiliki penyelesaian<a class="headerlink" href="#tidak-memiliki-penyelesaian" title="Link to this heading">#</a></h2>
-<p>dalam sistem persamaan linier terjadi ketika sistem tersebut bertentangan, yang berarti tidak ada kombinasi nilai variabel yang dapat memenuhi semua persamaan dalam sistem tersebut secara bersamaan.</p>
-<p>Contoh :</p>
-<p>2𝑥+3𝑦=6</p>
-<p>4𝑥+6𝑦=15</p>
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
+<p>−sinθ
+cosθ
 ​
-<p><img alt="plot" src="no/solusi.png" /></p>
-<p>Jika kita mencoba menyelesaikan sistem ini, kita akan melihat bahwa kedua persamaan ini saling bertentangan. Dalam hal ini, meskipun koefisien dari 𝑥 dan 𝑦 dalam kedua persamaan tampak berhubungan, konstanta di sisi kanan berbeda, yang berarti kedua garis akan berparalel dan tidak akan berpotongan.</p>
+]
+merupakan transformasi rotasi berlawanan arah jarum jam sebesar sudut
+𝜃
+θ.</p>
 </section>
-<section id="memiliki-banyak-penyelesaian">
-<h2>Memiliki banyak penyelesaian<a class="headerlink" href="#memiliki-banyak-penyelesaian" title="Link to this heading">#</a></h2>
-<p>disebut memiliki banyak penyelesaian dikarenakan semua persamaan dalam sistem tersebut menggambarkan hubungan yang sama, sehingga tidak ada batasan unik untuk nilai variabel. Dalam hal ini, solusi sistem tersebut bukan hanya satu titik, melainkan seluruh himpunan titik yang terletak pada satu garis atau lebih (tergantung pada jumlah variabel dalam sistem).</p>
-<p>Contoh :</p>
-<p>𝑥+2𝑦=4</p>
-<iframe scrolling="no" title="Simultaneous Equations:Elimination" src="https://www.geogebra.org/material/iframe/id/MXa3HKy3/width/977/height/574/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="977px" height="574px" style="border:0px;"> </iframe>
-<p><img alt="plot" src="_images/banyak_penyelesaian.png" /></p>
-<p>Jika kita melihat persamaan kedua, kita dapat melihat bahwa persamaan kedua sebenarnya adalah kelipatan dua dari persamaan pertama. Oleh karena itu, kedua persamaan ini menggambarkan garis yang sama dalam sistem koordinat, yang berarti sistem ini memiliki tak terhingga banyak solusi (seluruh garis tersebut adalah solusi).</p>
+<section class="tex2jax_ignore mathjax_ignore" id="bukti-misalkan-suatu-vektor-v">
+<h1>Bukti:
+Misalkan suatu vektor
+𝑣<a class="headerlink" href="#bukti-misalkan-suatu-vektor-v" title="Link to this heading">#</a></h1>
+<p>(
+𝑥
+,
+𝑦
+)
+v=(x,y) dalam koordinat kartesian. Kita dapat menyatakannya dalam koordinat polar sebagai:</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+<section class="tex2jax_ignore mathjax_ignore" id="v">
+<h1>𝑣<a class="headerlink" href="#v" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="x-y">
+<h1>(
+𝑥
+,
+𝑦
+)<a class="headerlink" href="#x-y" title="Link to this heading">#</a></h1>
+<p>(
+𝑟
+cos
+⁡
+𝛼
+,
+𝑟
+sin
+⁡
+𝛼
+)
+v=(x,y)=(rcosα,rsinα)
+dengan:</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="r">
+<h1>𝑟<a class="headerlink" href="#r" title="Link to this heading">#</a></h1>
+<p>∥
+𝑣
+∥
+r=∥v∥ (panjang vektor),</p>
+<p>𝛼
+α adalah sudut antara vektor
+𝑣
+v dengan sumbu-x positif.</p>
+<p>Transformasi
+𝐴
+A bertindak pada
+𝑣
+v sebagai berikut:</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>𝐴
+⋅
+𝑣<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cos-sin-sin-cos-r-cos-r-sin">
+<h1>[
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝜃
+sin
+⁡
+𝜃
+cos
+⁡
+𝜃
+]
+[
+𝑟
+cos
+⁡
+𝛼
+𝑟
+sin
+⁡
+𝛼
+]<a class="headerlink" href="#cos-sin-sin-cos-r-cos-r-sin" title="Link to this heading">#</a></h1>
+<p>𝑟
+[
+cos
+⁡
+𝜃
+cos
+⁡
+𝛼
+−
+sin
+⁡
+𝜃
+sin
+⁡
+𝛼
+sin
+⁡
+𝜃
+cos
+⁡
+𝛼
++
+cos
+⁡
+𝜃
+sin
+⁡
+𝛼
+]
+A⋅v=[
+cosθ
+sinθ
+​</p>
+<p>−sinθ
+cosθ
+​
+][
+rcosα
+rsinα
+​
+]=r[
+cosθcosα−sinθsinα
+sinθcosα+cosθsinα
+​
+]
+Gunakan identitas trigonometri:</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cos">
+<h1>cos
+⁡
+(
+𝛼
++
+𝜃
+)<a class="headerlink" href="#cos" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cos-cos-sin-sin-sin">
+<h1>cos
+⁡
+𝛼
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝛼
+sin
+⁡
+𝜃
+sin
+⁡
+(
+𝛼
++
+𝜃
+)<a class="headerlink" href="#cos-cos-sin-sin-sin" title="Link to this heading">#</a></h1>
+<p>sin
+⁡
+𝛼
+cos
+⁡
+𝜃
++
+cos
+⁡
+𝛼
+sin
+⁡
+𝜃
+cos(α+θ)=cosαcosθ−sinαsinθ
+sin(α+θ)=sinαcosθ+cosαsinθ
+Sehingga:</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1>𝐴
+⋅
+𝑣<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<p>𝑟
+(
+cos
+⁡
+(
+𝛼
++
+𝜃
+)
+,
+sin
+⁡
+(
+𝛼
++
+𝜃
+)
+)
+A⋅v=r(cos(α+θ),sin(α+θ))
+Artinya, vektor hasil adalah vektor dengan panjang yang sama (karena rotasi mempertahankan panjang), dan sudut terhadap sumbu-x sebesar
+𝛼
++
+𝜃
+α+θ, yaitu berputar berlawanan arah jarum jam sebesar
+𝜃
+θ.</p>
+<p>Kesimpulan:
+Transformasi linier dengan matriks rotasi
+𝐴
+A tersebut memang merepresentasikan rotasi sebesar sudut
+𝜃
+θ berlawanan arah jarum jam di bidang
+𝑅
+2
+R
+2
+.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -480,14 +742,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="penyelesaianlinier.html"
-       title="next page">
+    <a class="left-prev"
+       href="matriks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Penyelesaian Sistem persamaan Linier</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Matriks</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -506,12 +768,78 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">Persamaan linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linier">Sistem persamaan linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-tunggal">penyelesaian tunggal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-memiliki-penyelesaian">Tidak memiliki penyelesaian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memiliki-banyak-penyelesaian">Memiliki banyak penyelesaian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">𝐴</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-misalkan-suatu-vektor-v">Bukti:
+Misalkan suatu vektor
+𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v">𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x-y">(
+𝑥
+,
+𝑦
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#r">𝑟</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">𝐴
+⋅
+𝑣</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos-sin-sin-cos-r-cos-r-sin">[
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝜃
+sin
+⁡
+𝜃
+cos
+⁡
+𝜃
+]
+[
+𝑟
+cos
+⁡
+𝛼
+𝑟
+sin
+⁡
+𝛼
+]</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos">cos
+⁡
+(
+𝛼
++
+𝜃
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cos-cos-sin-sin-sin">cos
+⁡
+𝛼
+cos
+⁡
+𝜃
+−
+sin
+⁡
+𝛼
+sin
+⁡
+𝜃
+sin
+⁡
+(
+𝛼
++
+𝜃
+)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">𝐴
+⋅
+𝑣</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>

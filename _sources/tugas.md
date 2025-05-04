@@ -151,8 +151,10 @@ langkah selanjutnya yaitu subtitusi:
 dari persamaan 3 diperoleh:
 $$x_3 = 1/3$$
 
+
 dari persamaan 2 diperoleh:
 $$-2x_2 - 1x_3 = -1$$
+
 
 kita subtitusikan dari persamaan 3:
 $$-2x_2 - 1x_3 = -1$$
