@@ -622,7 +622,17 @@ x
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#1. Carilah matriks yang menggambarkan refleksi terhadap sumbu y= x. Kalikan matrik dengan 4 titik koordinat dan plot </span>
 
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline  
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">titik</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">titik</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
 <span class="n">B_trans</span> <span class="o">=</span> <span class="n">B</span><span class="nd">@koordinats</span>
 
 <span class="n">x_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
@@ -650,7 +660,7 @@ x
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ef550db28ebe75860ad0278d20e583bda55e7ba2e2c94429e5b63c7d7e21a682.png" src="_images/ef550db28ebe75860ad0278d20e583bda55e7ba2e2c94429e5b63c7d7e21a682.png" />
+<img alt="_images/41385a6955d03967a4798ac4091ca27f91ac09ccc82147f526f2b8a12f0dd617.png" src="_images/41385a6955d03967a4798ac4091ca27f91ac09ccc82147f526f2b8a12f0dd617.png" />
 </div>
 </div>
 </section>
