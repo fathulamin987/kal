@@ -618,6 +618,41 @@ x
 <li><p>Carilah matriks yang menggambarkan refleksi terhadap sumbu y= x. Kalikan matrik dengan 4 titik koordinat dan plot hasilnya</p></li>
 <li><p>Carilah matriks yang menggambarkan refleksi terhadap sumbu y= -x. Kalikan matrik dengan 4 titik koordinat dan plot hasilnya</p></li>
 </ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#1. Carilah matriks yang menggambarkan refleksi terhadap sumbu y= x. Kalikan matrik dengan 4 titik koordinat dan plot </span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">B_trans</span> <span class="o">=</span> <span class="n">B</span><span class="nd">@koordinats</span>
+
+<span class="n">x_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+
+<span class="c1"># Membuat gambar dan sumbu sumbu</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Ploting titik titik.  x dan y are vektor asal(domain) , x_LT1 dab y_LT1 bayangan (codomain)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span><span class="n">y_LT2</span><span class="p">,</span><span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menghubungkan titik dengan baris</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span><span class="n">y_LT2</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+<span class="c1"># menggambar sumbu sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi sumbu Y&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ef550db28ebe75860ad0278d20e583bda55e7ba2e2c94429e5b63c7d7e21a682.png" src="_images/ef550db28ebe75860ad0278d20e583bda55e7ba2e2c94429e5b63c7d7e21a682.png" />
+</div>
+</div>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrik-geser-shear-matrix">
