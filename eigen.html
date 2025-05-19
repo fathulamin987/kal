@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Eigen value dan Eigen vektor &#8212; amin</title>
+    <title>Eigenvalue dan Eigenvektor &#8212; amin</title>
   
   
   
@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'eigen';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -177,7 +179,7 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigen value dan Eigen vektor</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigenvalue dan Eigenvektor</a></li>
 </ul>
 
     </div>
@@ -347,7 +349,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -358,11 +362,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Eigen value dan Eigen vektor</h1>
+    <h1>Eigenvalue dan Eigenvektor</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,12 +387,39 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="eigen-value-dan-eigen-vektor">
-<h1>Eigen value dan Eigen vektor<a class="headerlink" href="#eigen-value-dan-eigen-vektor" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-dan-eigenvektor">
+<h1>Eigenvalue dan Eigenvektor<a class="headerlink" href="#eigenvalue-dan-eigenvektor" title="Link to this heading">#</a></h1>
 <ol class="arabic simple">
-<li><p>definisi eigen value dan eigen vektor</p></li>
-<li><p>mencari eigen value dan eigen vektor</p></li>
+<li><p>definisi eigenvalue dan eigenvektor</p></li>
 </ol>
+<p>Eigen
+megunakan persamaan :
+<span class="math notranslate nohighlight">\(A v = λ v\)</span></p>
+<p><span class="math notranslate nohighlight">\(A\)</span> = Matriks transformasi
+<span class="math notranslate nohighlight">\(V\)</span> = eigenvektor
+<span class="math notranslate nohighlight">\(λ\)</span> = eigen velue</p>
+<p>artinya: Ketika matriks <span class="math notranslate nohighlight">\(A\)</span> mengalikan vektor <span class="math notranslate nohighlight">\(V\)</span> hasilnya adalah vektor <span class="math notranslate nohighlight">\(V\)</span> itu sendiri yang dikalikan suatu skalar <span class="math notranslate nohighlight">\(λ\)</span>. Jadi, arah vektornya tidak berubah, hanya skalanya yang berubah.</p>
+<section id="definisi-eigenvalue-dan-eigenvector">
+<h2>Definisi Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<p>Untuk sebuah matriks kuadrat ( A ), sebuah <em>eigenvalue</em> ( \lambda ) dan <em>eigenvector</em> ( \vec{v} ) memenuhi:</p>
+<p>[
+A\vec{v} = \lambda \vec{v}
+]</p>
+<p>dengan syarat:</p>
+<ul class="simple">
+<li><p>( \vec{v} \ne \vec{0} ) (vektor tak nol)</p></li>
+<li><p>( \lambda \in \mathbb{R} ) atau ( \mathbb{C} )</p></li>
+<li><p>( A \in \mathbb{R}^{n \times n} ) atau ( \mathbb{C}^{n \times n} )</p></li>
+</ul>
+<section id="interpretasi-geometris">
+<h3>Interpretasi Geometris:<a class="headerlink" href="#interpretasi-geometris" title="Link to this heading">#</a></h3>
+<p>Vektor ( \vec{v} ) tidak berubah arah ketika dikalikan dengan matriks ( A ), hanya panjang dan arahnya yang bisa berubah (karena ( \lambda )).</p>
+<ol class="arabic simple" start="2">
+<li><p>mencari eigen value dan eigen vektor dengan polinomial</p></li>
+<li><p>urutkan dari besar ke kecil</p></li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -425,6 +467,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
