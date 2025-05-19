@@ -180,7 +180,6 @@
 
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigenvalue dan Eigenvektor</a></li>
-
 </ul>
 
     </div>
@@ -373,7 +372,6 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eigenvalue dan Eigenvektor</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
@@ -384,30 +382,17 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector">Langkah 2: Menentukan Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">\Rightarrow \begin{bmatrix}
-0 &amp; 0 \
-0 &amp; 0
-\end{bmatrix}
-\begin{bmatrix}
-x \
-y
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -493,22 +478,18 @@ A - \lambda I = \begin{bmatrix}
 \[
 (A - 3I)\vec{v} = \vec{0}
 \]</div>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">
-<h1>\Rightarrow \begin{bmatrix}
-0 &amp; 0 \
+<p><span class="math notranslate nohighlight">\(\Rightarrow \begin{bmatrix}
+0 &amp; 0 \\
 0 &amp; 0
 \end{bmatrix}
 \begin{bmatrix}
-x \
+x \\
 y
-\end{bmatrix}<a class="headerlink" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix" title="Link to this heading">#</a></h1>
-<p>\begin{bmatrix}
-0 \
+\end{bmatrix}
+=\)</span> <span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
 0
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <p>Persamaan ini selalu benar untuk semua vektor tak nol.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -518,9 +499,10 @@ x \\
 y
 \end{bmatrix}, \quad \text{dengan } x, y \in \mathbb{R},\ (x, y) \neq (0, 0)
 \end{split}\]</div>
+</section>
 <hr class="docutils" />
 <section id="matriks-b">
-<h2>Matriks B:<a class="headerlink" href="#matriks-b" title="Link to this heading">#</a></h2>
+<h3>Matriks B:<a class="headerlink" href="#matriks-b" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 B = \begin{bmatrix}
@@ -528,10 +510,10 @@ B = \begin{bmatrix}
 0 &amp; 4
 \end{bmatrix}
 \end{split}\]</div>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="langkah-1-mencari-eigenvalue">
-<h2>Langkah 1: Mencari Eigenvalue<a class="headerlink" href="#langkah-1-mencari-eigenvalue" title="Link to this heading">#</a></h2>
+<h3>Langkah 1: Mencari Eigenvalue<a class="headerlink" href="#langkah-1-mencari-eigenvalue" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 \det(B - \lambda I) = (-2 - \lambda)(4 - \lambda) = 0
@@ -540,12 +522,12 @@ B = \begin{bmatrix}
 \[
 \Rightarrow \lambda_1 = -2,\quad \lambda_2 = 4
 \]</div>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="langkah-2-mencari-eigenvector">
-<h2>Langkah 2: Mencari Eigenvector<a class="headerlink" href="#langkah-2-mencari-eigenvector" title="Link to this heading">#</a></h2>
+<h3>Langkah 2: Mencari Eigenvector<a class="headerlink" href="#langkah-2-mencari-eigenvector" title="Link to this heading">#</a></h3>
 <section id="untuk-lambda-2">
-<h3>Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:<a class="headerlink" href="#untuk-lambda-2" title="Link to this heading">#</a></h3>
+<h4>Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:<a class="headerlink" href="#untuk-lambda-2" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (B + 2I) = 
@@ -565,7 +547,7 @@ x\begin{bmatrix}
 \end{split}\]</div>
 </section>
 <section id="untuk-lambda-4">
-<h3>Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:<a class="headerlink" href="#untuk-lambda-4" title="Link to this heading">#</a></h3>
+<h4>Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:<a class="headerlink" href="#untuk-lambda-4" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (B - 4I) = 
@@ -583,11 +565,11 @@ y\begin{bmatrix}
 1
 \end{bmatrix}, \quad y \neq 0
 \end{split}\]</div>
+</section>
+</section>
 <hr class="docutils" />
-</section>
-</section>
 <section id="hasil-akhir">
-<h2>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<h3>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Eigenvalue: <span class="math notranslate nohighlight">\(\lambda = -2, \lambda = 4\)</span></p></li>
 <li><p>Eigenvector:</p>
@@ -600,6 +582,7 @@ y\begin{bmatrix}
 <ol class="arabic simple" start="3">
 <li><p>urutkan dari besar ke kecil</p></li>
 </ol>
+</section>
 </section>
 </section>
 
@@ -659,7 +642,6 @@ y\begin{bmatrix}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eigenvalue dan Eigenvektor</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
@@ -670,30 +652,17 @@ y\begin{bmatrix}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector">Langkah 2: Menentukan Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rightarrow-begin-bmatrix-0-0-0-0-end-bmatrix-begin-bmatrix-x-y-end-bmatrix">\Rightarrow \begin{bmatrix}
-0 &amp; 0 \
-0 &amp; 0
-\end{bmatrix}
-\begin{bmatrix}
-x \
-y
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-b">Matriks B:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue">Langkah 1: Mencari Eigenvalue</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">Untuk <span class="math notranslate nohighlight">\(\lambda = -2\)</span>:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-4">Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span>:</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
