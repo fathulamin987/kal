@@ -372,11 +372,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik">Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik">2. Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
@@ -392,6 +392,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
             </nav>
         </div>
@@ -405,11 +406,8 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-dan-eigenvektor">
 <h1>Eigenvalue dan Eigenvektor<a class="headerlink" href="#eigenvalue-dan-eigenvektor" title="Link to this heading">#</a></h1>
-<ol class="arabic simple">
-<li><p>definisi eigenvalue dan eigenvektor</p></li>
-</ol>
 <section id="definisi-eigenvalue-dan-eigenvector">
-<h2>Definisi Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<h2>1. Definisi Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
 <p>Untuk sebuah matriks kuadrat <span class="math notranslate nohighlight">\(A\)</span>, sebuah <em>eigenvalue</em> <span class="math notranslate nohighlight">\(\lambda\)</span> dan <em>eigenvector</em> <span class="math notranslate nohighlight">\(\vec{v}\)</span> memenuhi:</p>
 <p><span class="math notranslate nohighlight">\(A\vec{v} = \lambda \vec{v}\)</span></p>
 <p>dengan syarat:</p>
@@ -421,13 +419,10 @@
 <section id="interpretasi-geometris">
 <h3>Interpretasi Geometris:<a class="headerlink" href="#interpretasi-geometris" title="Link to this heading">#</a></h3>
 <p>Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span> tidak berubah arah ketika dikalikan dengan matriks <span class="math notranslate nohighlight">\(A\)</span>, hanya panjang dan arahnya yang bisa berubah (karena <span class="math notranslate nohighlight">\(\lambda\)</span>).</p>
-<ol class="arabic simple" start="2">
-<li><p>mencari eigen value dan eigen vektor dengan polinomial</p></li>
-</ol>
 </section>
 </section>
 <section id="mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik">
-<h2>Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik<a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik" title="Link to this heading">#</a></h2>
+<h2>2. Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik<a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik" title="Link to this heading">#</a></h2>
 <p>Urutkan eigenvector berdasarkan eigenvalue dari besar ke kecil.</p>
 <section id="contoh-soal">
 <h3>Contoh Soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h3>
@@ -579,10 +574,84 @@ y\begin{bmatrix}
 </ul>
 </li>
 </ul>
-<ol class="arabic simple" start="3">
-<li><p>urutkan dari besar ke kecil</p></li>
-</ol>
 </section>
+</section>
+<section id="urutkan-dari-besar-ke-kecil">
+<h2>3. urutkan dari besar ke kecil<a class="headerlink" href="#urutkan-dari-besar-ke-kecil" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+
+<span class="c1"># Hitung eigenvalue dan eigenvector</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Urutkan indeks berdasarkan eigenvalue dari besar ke kecil</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Urutkan eigenvalue dan eigenvector sesuai indeks</span>
+<span class="n">eigenvalues_sorted</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">eigenvectors_sorted</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues (terurut):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues_sorted</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors (mengikuti eigenvalues):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_sorted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues (terurut):
+[3. 3.]
+Eigenvectors (mengikuti eigenvalues):
+[[0. 1.]
+ [1. 0.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks B</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+
+<span class="c1"># Hitung eigenvalue dan eigenvector</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Urutkan indeks berdasarkan eigenvalue dari besar ke kecil</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Urutkan eigenvalue dan eigenvector sesuai indeks</span>
+<span class="n">eigenvalues_sorted</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">eigenvectors_sorted</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues (terurut):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues_sorted</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors (mengikuti eigenvalues):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_sorted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues (terurut):
+[ 4. -2.]
+Eigenvectors (mengikuti eigenvalues):
+[[0. 1.]
+ [1. 0.]]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -642,11 +711,11 @@ y\begin{bmatrix}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-geometris">Interpretasi Geometris:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik">Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-dengan-polinomial-karakteristik">2. Mencari Eigenvalue dan Eigenvector dengan Polinomial Karakteristik</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a">Matriks A:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban:</a></li>
@@ -662,6 +731,7 @@ y\begin{bmatrix}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
   </nav></div>
 
