@@ -384,6 +384,11 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-paralelepiped">Volume Paralelepiped</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-volume-paralelipiped">Menghitung Volume Paralelipiped</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -513,7 +518,69 @@ v_1 &amp; v_2 &amp; v_3
 <h3>Luas Jajaran Genjang<a class="headerlink" href="#luas-jajaran-genjang" title="Link to this heading">#</a></h3>
 <p>Secara geometris, luas jajaran genjang adalah: <span class="math notranslate nohighlight">\(A = bh\)</span> di mana <span class="math notranslate nohighlight">\(b\)</span> adalah panjang alas dan <span class="math notranslate nohighlight">\(h\)</span> adalah tinggi jajaran genjang, seperti yang ditunjukkan dalam Gambar (a). Ketika kita mendefinisikan aturan jajaran genjang penjumlahan vektor, dua vektor <span class="math notranslate nohighlight">\(\vec{u}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}\)</span> membentuk jajaran genjang jika ditarik dari titik awal yang sama, seperti yang ditunjukkan dalam Gambar (b). Trigonometri mengatakan bahwa: <span class="math notranslate nohighlight">\(h = \lVert \vec{u} \rVert \sin(\theta),\)</span> sehingga luas jajaran genjang adalah:</p>
 <p><span class="math notranslate nohighlight">\(A = \lVert \vec{u} \rVert \lVert \vec{v} \rVert \sin(\theta) = \lVert \vec{u} \times \vec{v} \rVert.\)</span></p>
-<p><img alt="image.png" src="attachment:image.png" /></p>
+<p>Tentukan luas jajaran genjang yang ditentukan oleh vektor: <span class="math notranslate nohighlight">\(\vec{u} = \begin{pmatrix}2 \\1\end{pmatrix}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v} =\begin{pmatrix}1 \\3\end{pmatrix}.\)</span></p>
+<p>Penyelesaiannya adalah dengan memandang <span class="math notranslate nohighlight">\(\vec{u}\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}\)</span> sebagai vektor di bidang <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> dari <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>, dan menuliskannya ulang sebagai:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{pmatrix}
+2 \\
+1 \\
+0
+\end{pmatrix}, \quad
+\vec{v} = \begin{pmatrix}
+1 \\
+3 \\
+0
+\end{pmatrix}.
+\end{split}\]</div>
+<p>Kini kita dapat menghitung hasil kali silang. Dengan mudah dapat ditunjukkan bahwa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} \times \vec{v} = \begin{pmatrix}
+0 \\
+0 \\
+5
+\end{pmatrix}.
+\end{split}\]</div>
+<p>Oleh karena itu, luas jajaran genjang adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+A = \|\vec{u} \times \vec{v}\| = 5.
+\]</div>
+</section>
+</section>
+<section id="volume-paralelepiped">
+<h2>Volume Paralelepiped<a class="headerlink" href="#volume-paralelepiped" title="Link to this heading">#</a></h2>
+<p>Bangun ruang tiga dimensi yang dibentuk oleh enam buah jajar genjang.</p>
+<p>Dengan menghitung hasil kali silang <span class="math notranslate nohighlight">\(\vec{v}\)</span> dan <span class="math notranslate nohighlight">\(\vec{w}\)</span>, kita mendapatkan vektor yang besarnya sama dengan luas alas. Menghitung produk titik vektor ini dengan <span class="math notranslate nohighlight">\(\vec{u}\)</span> menghitung volume paralelepiped!</p>
+<p>Oleh karena itu, volume paralelepiped yang ditentukan oleh vektor <span class="math notranslate nohighlight">\(\vec{u}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span>, dan <span class="math notranslate nohighlight">\(\vec{w}\)</span> adalah:</p>
+<div class="math notranslate nohighlight">
+\[V =|\vec{u} \cdot (\vec{v} \times \vec{w})|.\]</div>
+</section>
+<section id="id1">
+<h2>Contoh<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<section id="menghitung-volume-paralelipiped">
+<h3>Menghitung Volume Paralelipiped<a class="headerlink" href="#menghitung-volume-paralelipiped" title="Link to this heading">#</a></h3>
+<p>Tentukan volume paralelipiped yang ditentukan oleh vektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix}, \quad 
+\text{dan } \vec{w} = \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}.
+\end{split}\]</div>
+<p>Pertama, kita hitung:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{v} \times \vec{w} = \begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix}.
+\end{split}\]</div>
+<p>Kemudian,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+|\vec{u} \cdot (\vec{v} \times \vec{w})| = 
+\left| \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix} \cdot 
+\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \right| = 2.
+\end{split}\]</div>
+<p>Oleh karena itu, volume paralelipiped adalah <strong>2 satuan kubik</strong>.</p>
 </section>
 </section>
 </section>
@@ -582,6 +649,11 @@ v_1 &amp; v_2 &amp; v_3
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-kali-silang-dan-sudut">Hasil Kali Silang dan Sudut</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang">Luas Jajaran Genjang</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-paralelepiped">Volume Paralelepiped</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-volume-paralelipiped">Menghitung Volume Paralelipiped</a></li>
 </ul>
 </li>
 </ul>
