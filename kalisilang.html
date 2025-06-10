@@ -389,6 +389,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-volume-paralelipiped">Menghitung Volume Paralelipiped</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">1. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">3. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -583,6 +590,116 @@ A = \|\vec{u} \times \vec{v}\| = 5.
 <p>Oleh karena itu, volume paralelipiped adalah <strong>2 satuan kubik</strong>.</p>
 </section>
 </section>
+<section id="tugas">
+<h2>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h2>
+<section id="tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">
+<h3>1. Tentukan luas jajaran genjang yang ditentukan oleh vektor<a class="headerlink" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}.
+\end{split}\]</div>
+<p><strong>Jawab:</strong></p>
+<p>Anggap vektor berada di <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>:
+$<span class="math notranslate nohighlight">\(
+\vec{u} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}
+\)</span>$</p>
+<p>Hasil kali silang:
+$<span class="math notranslate nohighlight">\(
+\vec{u} \times \vec{v} = \begin{bmatrix} 0 \\ 0 \\ -3 \end{bmatrix}
+\)</span>$</p>
+<p>Luas jajaran genjang:
+$<span class="math notranslate nohighlight">\(
+A = \|\vec{u} \times \vec{v}\| = \sqrt{(-3)^2} = \boxed{3}
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h3>2. Tentukan luas jajaran genjang yang ditentukan oleh vektor<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}.
+\end{split}\]</div>
+<p><strong>Jawab:</strong></p>
+<p>Bentuk 3 dimensi:
+$<span class="math notranslate nohighlight">\(
+\vec{u} = \begin{bmatrix} 2 \\ 0 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \\ 0 \end{bmatrix}
+\)</span>$</p>
+<p>Hasil kali silang:
+$<span class="math notranslate nohighlight">\(
+\vec{u} \times \vec{v} = \begin{bmatrix} 0 \\ 0 \\ 6 \end{bmatrix}
+\)</span>$</p>
+<p>Luas jajaran genjang:
+$<span class="math notranslate nohighlight">\(
+A = \|\vec{u} \times \vec{v}\| = \boxed{6}
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="tentukan-luas-segitiga-dengan-titik-titik-sudut">
+<h3>3. Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\((0, 0, 0), \quad (1, 3, -1), \quad (2, 1, 1).\)</span></p>
+<p><strong>Jawab:</strong></p>
+<p>Vektor:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} = \begin{bmatrix} 1 \\ 3 \\ -1 \end{bmatrix}, \quad 
+\vec{AC} = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}
+\)</span>$</p>
+<p>Hasil kali silang:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} \times \vec{AC} = 
+\begin{bmatrix}
+(3)(1) - (-1)(1) \\
+-[(1)(1) - (-1)(2)] \\
+(1)(1) - (3)(2)
+\end{bmatrix}
+= \begin{bmatrix} 4 \\ -3 \\ -5 \end{bmatrix}
+\)</span>$</p>
+<p>Panjang vektor:
+$<span class="math notranslate nohighlight">\(
+\|\vec{AB} \times \vec{AC}\| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{50}
+\)</span>$</p>
+<p>Luas segitiga:
+$<span class="math notranslate nohighlight">\(
+A = \frac{1}{2} \sqrt{50} = \boxed{\frac{5\sqrt{2}}{1}}
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h3>4. Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+(5, 2, -1), \quad (3, 6, 2), \quad (1, 0, 4).
+\]</div>
+<p><strong>Jawab:</strong></p>
+<p>Vektor:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} = \begin{bmatrix} -2 \\ 4 \\ 3 \end{bmatrix}, \quad 
+\vec{AC} = \begin{bmatrix} -4 \\ -2 \\ 5 \end{bmatrix}
+\)</span>$</p>
+<p>Hasil kali silang:
+$<span class="math notranslate nohighlight">\(
+\vec{AB} \times \vec{AC} =
+\begin{bmatrix}
+(4)(5) - (3)(-2) \\
+-[-2(5) - 3(-4)] \\
+-2(-2) - 4(-4)
+\end{bmatrix}
+= \begin{bmatrix} 26 \\ -2 \\ 20 \end{bmatrix}
+\)</span>$</p>
+<p>Panjang:
+$<span class="math notranslate nohighlight">\(
+\|\vec{AB} \times \vec{AC}\| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}
+\)</span>$</p>
+<p>Luas segitiga:
+$<span class="math notranslate nohighlight">\(
+A = \frac{1}{2} \sqrt{1080} = \boxed{\frac{\sqrt{1080}}{2}}
+\)</span>$</p>
+<hr class="docutils" />
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -654,6 +771,13 @@ A = \|\vec{u} \times \vec{v}\| = 5.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-paralelepiped">Volume Paralelepiped</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-volume-paralelipiped">Menghitung Volume Paralelipiped</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-jajaran-genjang-yang-ditentukan-oleh-vektor">1. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Tentukan luas jajaran genjang yang ditentukan oleh vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">3. Tentukan luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4. Tentukan luas segitiga dengan titik-titik sudut</a></li>
 </ul>
 </li>
 </ul>
