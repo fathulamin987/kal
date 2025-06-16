@@ -60,6 +60,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'svd';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -350,7 +352,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -366,6 +370,20 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-svd">Dekomposisi SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-svd">Langkah-langkah SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svd-pada-matriks-2d">SVD pada Matriks 2D</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-matriks">Contoh Matriks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-perhitungan">Langkah-langkah Perhitungan</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -377,7 +395,48 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="svd">
 <h1>svd<a class="headerlink" href="#svd" title="Link to this heading">#</a></h1>
-<p>memfaktorkan matriks</p>
+<section id="dekomposisi-svd">
+<h2>Dekomposisi SVD<a class="headerlink" href="#dekomposisi-svd" title="Link to this heading">#</a></h2>
+<p>Untuk sebuah matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(m \times n\)</span>, dekomposisi SVD dinyatakan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+A = U \Sigma V^T
+\]</div>
+<p>Dimana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(U\)</span>: Matriks ortogonal berukuran <span class="math notranslate nohighlight">\(m \times m\)</span>, kolom-kolomnya disebut <strong>left singular vectors</strong></p></li>
+<li><p><span class="math notranslate nohighlight">\(\Sigma\)</span>: Matriks diagonal berukuran <span class="math notranslate nohighlight">\(m \times n\)</span>, elemen-elemennya adalah <strong>singular values</strong></p></li>
+<li><p><span class="math notranslate nohighlight">\(V^T\)</span>: Matriks ortogonal berukuran <span class="math notranslate nohighlight">\(n \times n\)</span>, baris-barisnya disebut <strong>right singular vectors</strong></p></li>
+</ul>
+</section>
+<section id="langkah-langkah-svd">
+<h2>Langkah-langkah SVD<a class="headerlink" href="#langkah-langkah-svd" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Hitung <span class="math notranslate nohighlight">\(A^T\)</span> dan <span class="math notranslate nohighlight">\(A A^T\)</span></p></li>
+<li><p>Cari nilai eigen dan singular value (<span class="math notranslate nohighlight">\(\sigma\)</span>) dari <span class="math notranslate nohighlight">\(A^T A\)</span><br />
+(catatan: singular value (<span class="math notranslate nohighlight">\(\sigma\)</span>) adalah akar dari nilai eigen <span class="math notranslate nohighlight">\(A^T A\)</span>)</p></li>
+<li><p>Hitung vektor singular kanan (<span class="math notranslate nohighlight">\(V\)</span>)</p></li>
+<li><p>Hitung vektor singular kiri (<span class="math notranslate nohighlight">\(U\)</span>)</p></li>
+<li><p>Bangun matriks diagonal <span class="math notranslate nohighlight">\(\Sigma\)</span></p></li>
+<li><p>Verifikasi bahwa <span class="math notranslate nohighlight">\(A = U \Sigma V^T\)</span></p></li>
+</ol>
+</section>
+<section id="svd-pada-matriks-2d">
+<h2>SVD pada Matriks 2D<a class="headerlink" href="#svd-pada-matriks-2d" title="Link to this heading">#</a></h2>
+<section id="contoh-matriks">
+<h3>Contoh Matriks<a class="headerlink" href="#contoh-matriks" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix}
+3 &amp; 1 \\
+1 &amp; 3
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<section id="langkah-langkah-perhitungan">
+<h2>Langkah-langkah Perhitungan<a class="headerlink" href="#langkah-langkah-perhitungan" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -425,6 +484,28 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-svd">Dekomposisi SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-svd">Langkah-langkah SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svd-pada-matriks-2d">SVD pada Matriks 2D</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-matriks">Contoh Matriks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-perhitungan">Langkah-langkah Perhitungan</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
