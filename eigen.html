@@ -394,9 +394,9 @@
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
             </nav>
         </div>
@@ -578,10 +578,47 @@ y\begin{bmatrix}
 </ul>
 </li>
 </ul>
-</section>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Implementasi</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+
+<span class="c1"># Hitung eigenvalue dan eigenvector</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Urutkan indeks berdasarkan eigenvalue dari besar ke kecil</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Urutkan eigenvalue dan eigenvector sesuai indeks</span>
+<span class="n">eigenvalues_sorted</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">eigenvectors_sorted</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues (terurut):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues_sorted</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors (mengikuti eigenvalues):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_sorted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues (terurut):
+[3. 3.]
+Eigenvectors (mengikuti eigenvalues):
+[[0. 1.]
+ [1. 0.]]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="urutkan-dari-besar-ke-kecil">
-<h2>3. urutkan dari besar ke kecil<a class="headerlink" href="#urutkan-dari-besar-ke-kecil" title="Link to this heading">#</a></h2>
+<h3>3. urutkan dari besar ke kecil<a class="headerlink" href="#urutkan-dari-besar-ke-kecil" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -656,6 +693,7 @@ Eigenvectors (mengikuti eigenvalues):
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -742,9 +780,9 @@ Eigenvectors (mengikuti eigenvalues):
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urutkan-dari-besar-ke-kecil">3. urutkan dari besar ke kecil</a></li>
 </ul>
   </nav></div>
 
