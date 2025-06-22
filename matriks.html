@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Tugas" href="initugas.html" />
-    <link rel="prev" title="Tugas soal eliminasi gaus" href="tugas.html" />
+    <link rel="prev" title="Penyelesaian Sistem persamaan Linier" href="penyelesaianlinier.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -172,8 +172,8 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="penyelesaianlinier.html">Penyelesaian Sistem persamaan Linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas.html">Tugas soal eliminasi gaus</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="initugas.html">Tugas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi.html">Transformasi</a></li>
 
@@ -376,6 +376,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
@@ -396,6 +397,10 @@
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -2350,6 +2355,53 @@ M_{15} = \begin{bmatrix}
 </section>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas">
+<h1>Tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
+<p>Tugas yang di berikan membuktikan bahwa transformasi linier rotasi di bidang 2 dimensi rotasi dalam <span class="math notranslate nohighlight">\(R^2\)</span> dengan matriks :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}\end{split}\]</div>
+<p>merupakan transformasi rotasi berlawanan arah jarum jam sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<p><em>pembuktian</em></p>
+<p>Misalkan suatu vektor <span class="math notranslate nohighlight">\(V=(x,y)\)</span> dalam koordinat kartesian. Kita dapat menyatakannya dalam koordinat polar sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v} = (x, y) = (r \cos \alpha, r \sin \alpha)
+\]</div>
+<p>dengan</p>
+<p><span class="math notranslate nohighlight">\(r = \left\| V \right\|\)</span> (panjang vektor)</p>
+<p><span class="math notranslate nohighlight">\(\alpha\)</span> adalah sudut antara vektor <span class="math notranslate nohighlight">\(v\)</span> dengan sumbu-x positif</p>
+<p>Transformasi <span class="math notranslate nohighlight">\(A\)</span> bertindak pada <span class="math notranslate nohighlight">\(V\)</span> sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} \cdot \mathbf{v} = 
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\begin{bmatrix}
+r \cos \alpha \\
+r \sin \alpha
+\end{bmatrix} 
+= r \begin{bmatrix}
+\cos \theta \cos \alpha - \sin \theta \sin \alpha \\
+\sin \theta \cos \alpha + \cos \theta \sin \alpha
+\end{bmatrix}\end{split}\]</div>
+<p>Gunakan identitas trigonometri:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+\cos(\alpha + \theta) &amp; = \cos \alpha \cos \theta - \sin \alpha \sin \theta \\
+\sin(\alpha + \theta) &amp; = \sin \alpha \cos \theta + \cos \alpha \sin \theta
+\end{align*}\end{split}\]</div>
+<p>Sehingga:</p>
+<div class="math notranslate nohighlight">
+\[
+A \cdot \mathbf{v} = r \left( \cos(\alpha + \theta), \sin(\alpha + \theta) \right)
+\]</div>
+<p>Artinya, vektor hasil adalah vektor dengan panjang yang sama (karena rotasi mempertahankan panjang), dan sudut terhadap sumbu-x sebesar <span class="math notranslate nohighlight">\(\alpha + \theta\)</span>, yaitu berputar berlawanan arah jarum jam sebesar <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<p>jadi transformasi linier dengan matriks rotasi <span class="math notranslate nohighlight">\(A\)</span> tersebut memang merepresentasikan rotasi sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span> berlawanan arah jarum jam di bidang <span class="math notranslate nohighlight">\(R^2\)</span></p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2382,12 +2434,12 @@ M_{15} = \begin{bmatrix}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="tugas.html"
+       href="penyelesaianlinier.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tugas soal eliminasi gaus</p>
+        <p class="prev-next-title">Penyelesaian Sistem persamaan Linier</p>
       </div>
     </a>
     <a class="right-next"
@@ -2416,6 +2468,7 @@ M_{15} = \begin{bmatrix}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">Penjumlahan Matriks</a></li>
@@ -2436,6 +2489,10 @@ M_{15} = \begin{bmatrix}
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
