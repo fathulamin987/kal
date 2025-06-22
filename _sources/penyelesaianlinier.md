@@ -91,7 +91,7 @@ Langkah-langkah:
 4. Hasil: Setelah matriks diubah menjadi bentuk identitas di sisi kiri, solusi sistem dapat langsung dibaca di sisi kanan.
 
 
-## Tugas soal eliminasi gaus 
+### Tugas soal eliminasi gaus 
 ### contoh soal nomer 1 :
 
 Diberikan sistem persamaan:
