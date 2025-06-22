@@ -876,6 +876,108 @@ V^T =
 U \Sigma V^T = A
 \]</div>
 <p>Perkalian kembali ketiga matriks akan menghasilkan matriks semula (atau sangat mendekati secara numerik karena pembulatan).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code pembuktian </span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks A dari soal</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+<span class="c1"># Langkah 1: Hitung A^T A</span>
+<span class="n">A_TA</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">A</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A^T A =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_TA</span><span class="p">)</span>
+
+<span class="c1"># Langkah 2: Hitung eigenvalue dan eigenvector A^T A</span>
+<span class="n">eigvals</span><span class="p">,</span> <span class="n">eigvecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigh</span><span class="p">(</span><span class="n">A_TA</span><span class="p">)</span>
+
+<span class="c1"># Urutkan dari terbesar ke terkecil</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigvals</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">eigvals</span> <span class="o">=</span> <span class="n">eigvals</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">eigvecs</span> <span class="o">=</span> <span class="n">eigvecs</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvalues (A^T A) =&quot;</span><span class="p">,</span> <span class="n">eigvals</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors (V) =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">eigvecs</span><span class="p">)</span>
+
+<span class="c1"># Langkah 3: Hitung singular value</span>
+<span class="n">singular_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">eigvals</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Singular values =&quot;</span><span class="p">,</span> <span class="n">singular_values</span><span class="p">)</span>
+
+<span class="c1"># Bentuk Sigma (4x2 karena A 4x2)</span>
+<span class="n">Sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">Sigma</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">singular_values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Sigma</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">singular_values</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sigma =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Sigma</span><span class="p">)</span>
+
+<span class="c1"># Langkah 4: Matriks V</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">eigvecs</span>
+
+<span class="c1"># Langkah 5: Hitung U = (1/σ) * A * v</span>
+<span class="n">u1</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span> <span class="o">@</span> <span class="n">V</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="n">singular_values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span> <span class="o">@</span> <span class="n">V</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">singular_values</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Gabungkan jadi matriks U (4x2 untuk dua singular value)</span>
+<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">U (2 kolom pertama) =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">U</span><span class="p">)</span>
+
+<span class="c1"># Langkah 6: Buktikan A = U Σ V^T</span>
+<span class="n">A_reconstructed</span> <span class="o">=</span> <span class="n">U</span> <span class="o">@</span> <span class="n">Sigma</span><span class="p">[:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">@</span> <span class="n">V</span><span class="o">.</span><span class="n">T</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A reconstructed =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_reconstructed</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">A original =</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Hitung error rekonstruksi</span>
+<span class="n">error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A</span> <span class="o">-</span> <span class="n">A_reconstructed</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reconstruction error = </span><span class="si">{</span><span class="n">error</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A^T A =
+ [[30. 44.]
+ [44. 84.]]
+
+Eigenvalues (A^T A) = [108.623638   5.376362]
+Eigenvectors (V) =
+ [[ 0.48835631 -0.87264432]
+ [ 0.87264432  0.48835631]]
+
+Singular values = [10.42226645  2.31869834]
+
+Sigma =
+ [[10.42226645  0.        ]
+ [ 0.          2.31869834]
+ [ 0.          0.        ]
+ [ 0.          0.        ]]
+
+U (2 kolom pertama) =
+ [[ 0.72667296  0.34526321]
+ [ 0.51235825  0.300381  ]
+ [ 0.4386146  -0.87355405]
+ [ 0.13058586 -0.16573437]]
+
+A reconstructed =
+ [[3. 7.]
+ [2. 5.]
+ [4. 3.]
+ [1. 1.]]
+
+A original =
+ [[3. 7.]
+ [2. 5.]
+ [4. 3.]
+ [1. 1.]]
+
+Reconstruction error = 1.88411095042053e-15
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
